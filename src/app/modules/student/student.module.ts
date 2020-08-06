@@ -21,6 +21,7 @@ import { StudentUniversitiesListComponent } from "./pages/student-universities-l
     ListOfUniversitiesComponent,
     StudentProfileComponent,
     StudentUniversitiesListComponent,
+    StudentProfileComponent
   ],
   imports: [CommonModule, StudentRoutingModule],
 })
