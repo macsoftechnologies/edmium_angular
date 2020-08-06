@@ -14,4 +14,9 @@ export class StudentDashboardComponent implements OnInit {
   onNavigateToUniversityList() {
     this.router.navigateByUrl("student/universities");
   }
+
+  /* Navigate to profile */
+  onNavigateToProfile() {
+    this.router.navigateByUrl("student/profile");
+  }
 }

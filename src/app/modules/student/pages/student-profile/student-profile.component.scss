@@ -1,0 +1,24 @@
+@import "../../../../../assets/responsive";
+
+#student_profile {
+    .student-profile-wrapper {
+        .profile-container {
+            max-width: 990px;
+            width: 990px;
+            margin: auto;
+            .profile-card {
+                background-color: #4A90E2;
+                box-shadow: 0 1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.1), 0 2px 1px -2px rgba(0,0,0,.2);
+                border-radius: 2px;
+                margin: .5rem 0 1rem;
+                color: #fff;
+                height: 210px;
+            }
+            .profile-update-cards {
+                .profile-update-cards-wrapper {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
