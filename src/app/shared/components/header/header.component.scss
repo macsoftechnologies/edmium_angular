@@ -1,0 +1,39 @@
+/*sticky header position*/
+
+body {
+  min-height: 1200px;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+nav {
+  background: #000;
+  min-height: 50px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+.header-logo {
+    display: flex;
+}
+
+.header-logo img {
+    height: 30px;
+    width: 45px;
+    margin-top: 8px;
+}
+
+.logo-text {
+    font-size: 29px;
+    height: auto;
+    margin: 0px 8px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
