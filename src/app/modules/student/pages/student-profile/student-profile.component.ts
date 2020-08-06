@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-student-profile',
-  templateUrl: './student-profile.component.html',
-  styleUrls: ['./student-profile.component.scss']
+  selector: "app-student-profile",
+  templateUrl: "./student-profile.component.html",
+  styleUrls: ["./student-profile.component.scss"],
 })
 export class StudentProfileComponent implements OnInit {
+  isModal: boolean = false;
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  scrollToEle(el: HTMLElement) {
+    console.log(el);
+    el.scrollIntoView({ behavior: "smooth" });
+    el.scrollTo(0, 10);
   }
 
+  onPopUpModal() {
+    this.isModal = !this.isModal;
+  }
+  onCloseModal() {
+    this.onPopUpModal();
+  }
 }

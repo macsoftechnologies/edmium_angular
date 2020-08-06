@@ -1,24 +1,84 @@
 @import "../../../../../assets/responsive";
 
 #student_profile {
-    .student-profile-wrapper {
-        .profile-container {
-            max-width: 990px;
-            width: 990px;
-            margin: auto;
-            .profile-card {
-                background-color: #4A90E2;
-                box-shadow: 0 1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.1), 0 2px 1px -2px rgba(0,0,0,.2);
-                border-radius: 2px;
-                margin: .5rem 0 1rem;
-                color: #fff;
-                height: 210px;
+  .student-profile-wrapper {
+    .profile-container {
+      max-width: 990px;
+      width: 990px;
+      margin: auto;
+      .profile-card {
+        background-color: #4a90e2;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05),
+          0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 1px -2px rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+        margin: 0.5rem 0 1rem;
+        color: #fff;
+        height: 210px;
+      }
+      .profile-update-cards {
+        .profile-update-cards-wrapper {
+          display: flex;
+          justify-content: space-between;
+          .side-quick-links {
+            width: 240px;
+            max-height: 498px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05),
+              0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 0;
+            position: sticky;
+            top: 15px;
+          }
+          .update-cards-wrapper {
+            .edit-card {
+              box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05),
+                0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+              border-radius: 0;
+              width: 731px;
+              margin-bottom: 20px;
             }
-            .profile-update-cards {
-                .profile-update-cards-wrapper {
-                    display: flex;
-                }
+            .attach-resume-card {
+              height: 730px;
             }
+            .resume-headline-card {
+              height: 120px;
+            }
+            .key-skills-card {
+              height: 150px;
+            }
+            .education-card {
+              height: 120px;
+            }
+            .projects-card {
+              height: 387px;
+            }
+          }
         }
+      }
     }
+
+    .modal-popup {
+      position: absolute;
+      top: 67px;
+      left: 0;
+      z-index: 1100;
+      background: #000;
+      opacity: 0.8;
+      width: 100%;
+      height: 100%;
+      .modal-wrapper {
+        background: #fff;
+        width: 50%;
+        margin: auto;
+        height: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1117;
+      }
+      p {
+        color: #000;
+      }
+    }
+  }
 }

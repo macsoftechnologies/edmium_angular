@@ -6,14 +6,49 @@
       </div>
       <div class="profile-update-cards">
         <div class="profile-update-cards-wrapper">
-
-          <div class="">
+          <div class="side-quick-links">
             <p>Quick Links</p>
+            <ul>
+              <li (click)="scrollToEle(attach_resume)">Attach Resume</li>
+              <li (click)="scrollToEle(resume_headline)">Resume Headline</li>
+              <li (click)="scrollToEle(key_skills)">Key Skills</li>
+              <li (click)="scrollToEle(student_education)">Education</li>
+              <li (click)="scrollToEle(student_projects)">Projects</li>
+            </ul>
           </div>
-          <div class="">
-            <p>Attach Resume</p>
+          <div class="update-cards-wrapper">
+            <div class="edit-card attach-resume-card" #attach_resume>
+              <p>
+                Attach Resume
+                <i
+                  class="fa fa-pencil"
+                  aria-hidden="true"
+                  (click)="onPopUpModal()"
+                ></i>
+              </p>
+            </div>
+            <div class="edit-card resume-headline-card" #resume_headline>
+              <p>Resume Headline</p>
+            </div>
+            <div class="edit-card key-skills-card" #key_skills>
+              <p>Key Skills</p>
+            </div>
+            <div class="edit-card education-card" #student_education>
+              <p>Education</p>
+            </div>
+            <div class="edit-card projects-card" #student_projects>
+              <p>Projects</p>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-popup" *ngIf="isModal">
+      <div class="modal-wrapper">
+        <p>Modal testing</p>
+        <i class="fa fa-times" aria-hidden="true" (click)="onCloseModal()"></i>
       </div>
     </div>
   </div>
