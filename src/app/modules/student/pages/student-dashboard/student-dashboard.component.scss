@@ -1,0 +1,124 @@
+@import "../../../../../assets/responsive";
+
+.student-dashboard {
+    height: 88vh;
+    .student-dashboard-container {
+        background-color: #f5f5f5;
+        height: 100%;
+        .student-dashboard-row {
+            height: 100%;
+            .student-dashboard-profile {
+                background-color: #fff;
+                padding: 15px 15px 0;
+            }
+            .student-dashboard-about {
+                padding: 15px 30px;
+                .about-me-card {
+                    background-color: #fff;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 25px;
+                    .about-me-text {
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                    }
+                    .cam-icon {
+                        margin-bottom: 0;
+                        font-size: 20px;
+                        color: #ccc;
+                    }
+                }
+                .show-me-card {
+                    background-color: #3150cb;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 25px;
+                    .show-me-text {
+                        color: #fff;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        margin-bottom: 0;
+                        width: 10%;
+                        text-align: center;
+                    }
+                    ul {
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        margin-bottom: 0;
+                        li {
+                            width: 25%;
+                            background-color: #637ef7;
+                            padding: 10px;
+                            display: flex;
+                            margin: 0 5px;
+                            align-items: center;
+                            &:nth-child(1) {
+                                background-color: #2461e4;
+                            }
+                            i {
+                                margin-right: 10px;
+                                color: #fff;
+                            }
+                            p {
+                                margin-bottom: 0;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                width: 100%;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /****** Student Profile Styles ********/
+    .student-profile {
+        .student-overall-details {
+            .student-info {
+                .student-image {
+                    height: 120px;
+                    width: 120px;
+                    margin: auto;
+                    img {
+                        border-radius: 50%;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .student-name {
+                    text-align: center;
+                    h4 {
+                        font-size: 18px;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            .profile-progress-bar {
+                .profile-text {
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                    color: #3150cb;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                    }
+                }
+            }
+            .progress {
+                height: 0.5rem !important;
+            }
+        }
+    }
+    /********** End Of student profile styles **********/  
+}
