@@ -12,4 +12,6 @@ export class UniversityComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+
 }

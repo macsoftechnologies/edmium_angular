@@ -1,3 +1,33 @@
-<p>
+<!-- <p>
   <button routerLink="universities-list">Search</button>
-</p>
+</p> -->
+
+<app-search-university-panel></app-search-university-panel>
+
+
+<div class="container-fluid">
+
+  <div class="row mt-5">
+    
+    <div class="col-md-3">
+      
+      <app-university-search-filter></app-university-search-filter>
+      
+    </div>
+    
+    <div class="col-md-9">
+      
+       <app-university></app-university>
+       
+       <app-university-search-results></app-university-search-results>
+       
+    </div>
+
+    
+  </div>
+  
+</div>
+
+<!-- <p>
+  <button (click)="onNavigateToStudentDashboard()">Apply Now</button>
+</p> -->

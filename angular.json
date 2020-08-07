@@ -142,5 +142,8 @@
       }
     }
   },
-  "defaultProject": "edmium"
+  "defaultProject": "edmium",
+  "cli": {
+    "analytics": "875df7af-8880-49ea-b88e-3c725522a8ad"
+  }
 }

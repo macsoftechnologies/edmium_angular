@@ -10,6 +10,8 @@ export class SearchUniversitiesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    
   }
 
 }
