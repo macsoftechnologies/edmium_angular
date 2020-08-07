@@ -31,6 +31,9 @@
                 <div class="progress-bar" role="progressbar" style="width: 70%;"  aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
+            <div class="views">
+              <button>Views</button>
+            </div>
             <div class="edit-profile">
               <button class="btn btn-primary btn-sm" (click)="onNavigateToProfile()">Edit Profile</button>
             </div>
@@ -50,6 +53,15 @@
             <li><i class="fa fa-suitcase"></i><p>jobs <span><i class="fa fa-check"></i></span></p></li>
             <li><i class="fa fa-user-circle"></i><p>connections <span><i class="fa fa-check"></i></span></p></li>
           </ul>
+        </div>
+        <div class="see-all">
+          <p>See all</p>
+        </div>
+        <!-- <carousel>
+          <app-favourite-universities></app-favourite-universities>
+        </carousel> -->
+        <div class="favourite-university-card">
+          <app-favourite-universities></app-favourite-universities>
         </div>
       </div>
     </div>

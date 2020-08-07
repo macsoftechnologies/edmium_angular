@@ -8,6 +8,7 @@ import { InterestedUniversitiesComponent } from "./components/interested-univers
 import { ListOfUniversitiesComponent } from "./components/list-of-universities/list-of-universities.component";
 import { StudentUniversitiesListComponent } from "./pages/student-universities-list/student-universities-list.component";
 import { StudentProfileComponent } from './pages/student-profile/student-profile.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -17,8 +18,9 @@ import { StudentProfileComponent } from './pages/student-profile/student-profile
     ListOfUniversitiesComponent,
     StudentProfileComponent,
     StudentUniversitiesListComponent,
-    StudentProfileComponent
+    StudentProfileComponent,
+    
   ],
-  imports: [CommonModule, StudentRoutingModule],
+  imports: [CommonModule, StudentRoutingModule,IvyCarouselModule],
 })
 export class StudentModule {}

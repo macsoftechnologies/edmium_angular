@@ -1,0 +1,73 @@
+.favourite-universities {
+    .university-card {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 10px;
+        .favourite-icons {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 0;
+            .exchange-icon {
+                padding: 3px 7px;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                color: #ccc;
+                margin-right: 5px;
+            }
+            .fav-icon {
+                padding: 3px 5px;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                color: #ccc;
+                margin-right: 5px;
+            }
+        }
+        .university-name {
+            height: 100%;
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            img {
+                height: 100%;
+                width: 150px;
+            }
+        }
+        .course-name-details {
+            padding: 15px;
+            h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+            .detailed-duration {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0;
+                li {
+                    list-style-type: disc;
+                    color: #ccc;
+                    font-size: 13px;
+                    &:nth-child(1) {
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+        .fee-structure {
+            padding: 0 15px;
+            .price-per-year {
+                h4 {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+            }
+            .university-country {
+                p {
+                    font-size: 14px;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
