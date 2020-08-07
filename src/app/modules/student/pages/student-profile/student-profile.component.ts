@@ -12,7 +12,6 @@ export class StudentProfileComponent implements OnInit {
   ngOnInit() {}
 
   scrollToEle(el: HTMLElement) {
-    console.log(el);
     el.scrollIntoView({ behavior: "smooth" });
     el.scrollTo(0, 10);
   }
