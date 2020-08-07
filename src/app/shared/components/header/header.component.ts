@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public onNavigateCounsellor(){
-this.router.navigateByUrl("counsellor/search-programs");
+this.router.navigateByUrl("counsellor/search-program");
   }
 
 }
