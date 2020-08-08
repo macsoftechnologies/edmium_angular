@@ -9,7 +9,10 @@
                 padding: 15px 15px 0;
             }
             .student-dashboard-about {
-                padding: 15px 30px;
+                padding: 15px 45px;
+                @include mobile {
+                    padding: 15px;
+                }
                 .about-me-card {
                     background-color: #fff;
                     padding: 10px;
@@ -84,7 +87,83 @@
                     }
                 }
                 .favourite-university-card {
-                    width: 250px;
+                    display: flex;
+                    margin-bottom: 10px;
+                    @include mobile {
+                        flex-wrap: wrap;
+                    }
+                    .fav-card-block {
+                        max-width: 300px;
+                        margin-bottom: 10px;
+                        margin-right: 10px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        @include mobile {
+                            max-width: 100%;
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                .interested-universities {
+                    .interested-text {
+                        p {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .interested-universities-block {
+                        display: flex;
+                        margin-bottom: 15px;
+                        @include mobile {
+                            flex-wrap: wrap;
+                        }
+                        .alternate-universities {
+                            max-width: 250px;
+                            margin-bottom: 10px;
+                            margin-right: 10px;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+                .universities-list {
+                    .universities-list-header {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .universities-list {
+                            margin-bottom: 0;
+                            font-size: 20px;
+                        }
+                        button {
+                            border: none;
+                            background-color: orange;
+                            color: #fff;
+                            font-size: 14px;
+                            padding: 5px 10px;
+                        }
+                    }
+                    .university-table {
+                        background-color: #fff;
+                        table {
+                            thead {
+                                th {
+                                    background-color: #637ef7;
+                                    border: none;
+                                    color: #fff;
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    td {
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -92,7 +171,10 @@
     
     /****** Student Profile Styles ********/
     .student-profile {
+        height: 100%;
         .student-overall-details {
+            height: 100%;
+            position: relative;
             .student-info {
                 .student-image {
                     height: 120px;
@@ -124,21 +206,27 @@
                     }
                 }
             }
-            .progress {
-                height: 0.5rem !important;
-            }
-            .views {
-                margin: 10px 0;
-                button {
-                    padding: 3px 10px;
-                    background-color: #28a745;
-                    color: #fff;
-                    font-size: 14px;
-                    border: none;
+            .profile-btns {
+                margin-top: 100px;
+                @include mobile {
+                    margin-top: 0;
+                }
+                .views {
+                    margin: 10px 0;
+                    button {
+                        padding: 3px 10px;
+                        background-color: #28a745;
+                        color: #fff;
+                        font-size: 14px;
+                        border: none;
+                    }
+                }
+                .edit-profile {
+                    margin: 10px 0;
                 }
             }
-            .edit-profile {
-                margin: 10px 0;
+            .progress {
+                height: 0.5rem !important;
             }
         }
     }

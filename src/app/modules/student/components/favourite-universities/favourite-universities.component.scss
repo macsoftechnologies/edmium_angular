@@ -9,16 +9,16 @@
             margin: 10px 0;
             .exchange-icon {
                 padding: 3px 7px;
-                border: 1px solid #ccc;
+                border: 1px solid #9c9191;
                 border-radius: 50%;
-                color: #ccc;
+                color: #9c9191;
                 margin-right: 5px;
             }
             .fav-icon {
                 padding: 3px 5px;
-                border: 1px solid #ccc;
+                border: 1px solid #9c9191;
                 border-radius: 50%;
-                color: #ccc;
+                color: #635a5a;
                 margin-right: 5px;
             }
         }
@@ -41,12 +41,12 @@
             }
             .detailed-duration {
                 display: flex;
-                justify-content: space-between;
                 margin-bottom: 0;
                 li {
                     list-style-type: disc;
                     color: #ccc;
                     font-size: 13px;
+                    padding-right: 25px;
                     &:nth-child(1) {
                         list-style-type: none;
                     }

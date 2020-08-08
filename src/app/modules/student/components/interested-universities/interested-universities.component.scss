@@ -1,0 +1,36 @@
+@import "../../../../../assets/responsive";
+
+.interested-universities {
+    .interested-university-card {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        .university-details {
+            text-align: center;
+            .university-image {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .inner-university-details {
+                padding: 0 15px 30px;
+                .designation-name {
+                    color: #a09393;
+                }
+                p {
+                    color: #ccc;
+                }
+            }
+        }
+        .interested-university-footer {
+            display: flex;
+            padding: 15px;
+            justify-content: space-between;
+            border-top: 1px solid #ccc;
+            p {
+                margin-bottom: 0;
+                color: #a09393;
+            }
+        }
+    }
+}

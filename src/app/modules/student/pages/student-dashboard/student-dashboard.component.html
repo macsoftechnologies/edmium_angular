@@ -31,11 +31,13 @@
                 <div class="progress-bar" role="progressbar" style="width: 70%;"  aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
-            <div class="views">
-              <button>Views</button>
-            </div>
-            <div class="edit-profile">
-              <button class="btn btn-primary btn-sm" (click)="onNavigateToProfile()">Edit Profile</button>
+            <div class="profile-btns">
+              <div class="views">
+                <button>Views</button>
+              </div>
+              <div class="edit-profile">
+                <button class="btn btn-primary btn-sm" (click)="onNavigateToProfile()">Edit Profile</button>
+              </div>
             </div>
           </div>
         </div>
@@ -61,13 +63,93 @@
           <app-favourite-universities></app-favourite-universities>
         </carousel> -->
         <div class="favourite-university-card">
-          <app-favourite-universities></app-favourite-universities>
+          <div class="fav-card-block">
+            <app-favourite-universities></app-favourite-universities>
+          </div>
+          <div class="fav-card-block">
+            <app-favourite-universities></app-favourite-universities>
+          </div>
+          <div class="fav-card-block">
+            <app-favourite-universities></app-favourite-universities>
+          </div>
+          <div class="fav-card-block">
+            <app-favourite-universities></app-favourite-universities>
+          </div>
+        </div>
+        <div class="interested-universities">
+          <div class="interested-text">
+            <p>Universities Interested In You</p>
+          </div>
+          <div class="interested-universities-block">
+            <div class="alternate-universities">
+              <app-interested-universities></app-interested-universities>
+            </div>
+            <div class="alternate-universities">
+              <app-interested-universities></app-interested-universities>
+            </div>
+            <div class="alternate-universities">
+              <app-interested-universities></app-interested-universities>
+            </div>
+            <div class="alternate-universities">
+              <app-interested-universities></app-interested-universities>
+            </div>
+            <div class="alternate-universities">
+              <app-interested-universities></app-interested-universities>
+            </div>
+          </div>
+        </div>
+        <div class="universities-list">
+          <div class="universities-list-header">
+            <p class="universities-list">My University List</p>
+            <button (click)="onNavigateToUniversityList()">View All</button>
+          </div>
+          <div class="university-table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">My Rank</th>
+                  <th scope="col">Univ Name</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">QS Ranking</th>
+                  <th scope="col">Tution Fee</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- <p>
-  <button (click)="onNavigateToUniversityList()">View All</button>
-</p> -->
