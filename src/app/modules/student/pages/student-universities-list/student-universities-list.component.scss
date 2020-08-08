@@ -3,35 +3,74 @@
 .myuniversities{
     background-color: #f5f5f5;
     padding-top: 10px;
+    // max-width: 1330px;
+    .unicontainer{
+        margin: 0px 40px;
+    }
+    .tab-content{
+        box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.45), 0 3px 15px 0 rgba(0, 0, 0, 0.35);
+        transition: .25s box-shadow;
+        background-color: white;
+        margin-bottom: 20px;
+    }
     .myuniversitiesheading{
         h4{
-            border-bottom: 2px solid black;
-            padding-bottom: 5px;
+            // border-bottom: 2px solid black;
+            // padding-bottom: 5px;
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            font-family: 'Cinzel';
+            margin: 0px;
+            letter-spacing: 1px;
+            margin-top: 15px;
+        }
+        h6{
+            color: #000;
+            font-family: 'Julius Sans One';
+            margin-bottom: 15px;
         }
     }
     .nav-link{
-        background-color: white;
-        color: black;
+        // background-color: white;
+        // color: black;
+        color: #000;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-family: "Rokkitt";
+        background-color: #fff;
+        font-weight: bold;
+    }
         
     }
     .nav-link.active{
         i,a{
-            color: #f36638;
+            color: #f36638 !important;
         }
-        border-bottom: 5px solid #f36638;
-        color: #f36638;
+        // border-bottom: 5px solid #f36638;
+        color: #f36638 !important;
     }
+    .table-responsive{
+        padding: 12px;
+    
     .table{
-        width: 99%;
-        margin: auto;
+        // width: 99%;
+        // margin: auto;
         /* border: 1px solid; */
-        box-shadow: 1px 2px 3px 3px darkgrey;
+        // box-shadow: 1px 2px 3px 3px darkgrey;
         margin-bottom: 13px;
         thead{
             color: white;
             background-color: #3150cb;
+            th{
+                font-size: 15px;
+                font-family: sans-serif;
+            }
         }
         tbody{
+            border: 1px solid lightgrey;
             .borderbottom{
                 border-bottom: 1px solid lightgrey;
                 
@@ -39,7 +78,11 @@
             background-color: white;
             td{
                 border-top: none;
-                button{
+                line-height: 1.33em;
+                color: #7E7E7E;
+                font-family: serif;
+                font-size: 14px;
+              button{
                     background-color: green;
                     color: white;
                     border-radius: 5px;
@@ -72,6 +115,7 @@
         }
         
     }
+}
     .ED-Suugestions{
         position: absolute;
         padding: 2px 26px;
@@ -87,7 +131,7 @@
         left: 303px;
         list-style: none;
     }
-}
+
 
 
 
