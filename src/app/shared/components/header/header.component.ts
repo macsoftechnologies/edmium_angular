@@ -10,11 +10,4 @@ export class HeaderComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {}
-
-  public onNavigateCounsellor() {
-    this.router.navigateByUrl("counsellor/search-program");
-  }
-  public onNavigateUniversity() {
-    this.router.navigateByUrl("university/dashboard");
-  }
 }
