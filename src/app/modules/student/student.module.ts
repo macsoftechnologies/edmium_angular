@@ -9,6 +9,7 @@ import { ListOfUniversitiesComponent } from "./components/list-of-universities/l
 import { StudentUniversitiesListComponent } from "./pages/student-universities-list/student-universities-list.component";
 import { StudentProfileComponent } from './pages/student-profile/student-profile.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { ScholarshipsComponent } from './pages/scholarships/scholarships.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     StudentProfileComponent,
     StudentUniversitiesListComponent,
     StudentProfileComponent,
+    ScholarshipsComponent,
     
   ],
   imports: [CommonModule, StudentRoutingModule,IvyCarouselModule],
