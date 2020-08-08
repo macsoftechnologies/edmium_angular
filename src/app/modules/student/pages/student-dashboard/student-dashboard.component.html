@@ -14,35 +14,35 @@
             </div>
             <div class="student-detailed-info">
               <ul>
-                <li>Qualification:</li>
-                <li>Area of interest</li>
-                <li>Preferred Country:</li>
-                <li>Preferred Intake</li>
-                <li>Dream University:</li>
-                <li>Verified:</li>
+                <li>Qualification :</li>
+                <li>Area of interest :</li>
+                <li>Preferred Country :</li>
+                <li>Preferred Intake :</li>
+                <li>Dream University :</li>
+                <li>Verified :</li>
               </ul>
-            </div>
-            <div class="profile-progress-bar">
-              <div class="profile-text">
-                <p>Profile Completeness(Good)</p>
-                <p>70%</p>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 70%;"  aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
             </div>
             <div class="profile-btns">
               <div class="views">
                 <button>Views</button>
               </div>
               <div class="edit-profile">
-                <button class="btn btn-primary btn-sm" (click)="onNavigateToProfile()">Edit Profile</button>
+                <button (click)="onNavigateToProfile()">Edit Profile</button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-10 student-dashboard-about">
+        <div class="profile-progress-bar">
+          <div class="profile-text">
+            <p>Profile Completeness(Good)</p>
+            <p>70%</p>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 70%;"  aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
         <div class="about-me-card">
           <p class="about-me-text">about me</p>
           <p class="cam-icon"><i class="fa fa-camera"></i></p>
@@ -50,10 +50,25 @@
         <div class="show-me-card">
           <p class="show-me-text">show me</p>
           <ul>
-            <li><i class="fa fa-file-text"></i> <p>articles</p></li>
-            <li><i class="fa fa-calendar"></i><p>events <span><i class="fa fa-check"></i></span></p></li>
-            <li><i class="fa fa-suitcase"></i><p>jobs <span><i class="fa fa-check"></i></span></p></li>
-            <li><i class="fa fa-user-circle"></i><p>connections <span><i class="fa fa-check"></i></span></p></li>
+            <li>
+              <i class="fa fa-calendar"></i>
+              <select class="form-control" id="sel1">
+                <option>India</option>
+                <option>UK</option>
+              </select>
+            </li>
+            <li><i class="fa fa-globe"></i>
+              <select class="form-control" id="sel1">
+                <option>India</option>
+                <option>UK</option>
+              </select>
+            </li>
+            <li><i class="fa fa-user-book"></i>
+              <select class="form-control" id="sel1">
+                <option>MBA</option>
+                <option>Finance</option>
+              </select>
+            </li>
           </ul>
         </div>
         <div class="see-all">
@@ -108,42 +123,23 @@
               <thead>
                 <tr>
                   <th scope="col">My Rank</th>
-                  <th scope="col">Univ Name</th>
-                  <th scope="col">Country</th>
-                  <th scope="col">QS Ranking</th>
-                  <th scope="col">Tution Fee</th>
+                  <th scope="col">University Name</th>
+                  <th scope="col">Campus</th>
+                  <th scope="col">Costs</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>1</td>
+                  <td><img src="../../../../../assets/images/coventry.png" alt=""> <span>Conventry</span></td>
+                  <td>Niagara</td>
+                  <td><p>CAD 31768/Year</p></td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>2</td>
+                  <td><img src="../../../../../assets/images/coventry.png" alt=""> <span>Conventry</span></td>
+                  <td>Niagara</td>
+                  <td><p>CAD 31768/Year</p></td>
                 </tr>
               </tbody>
             </table>

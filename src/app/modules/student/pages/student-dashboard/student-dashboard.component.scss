@@ -13,6 +13,28 @@
                 @include mobile {
                     padding: 15px;
                 }
+                .profile-progress-bar {
+                    margin-bottom: 15px;
+                    .profile-text {
+                        display: flex;
+                        justify-content: space-between;
+                        p {
+                        color: #000;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        font-weight: 700;
+                            &:hover {
+                                color: #fb850a;
+                            }
+                        }
+                    }
+                    .progress {
+                        height: 0.5rem !important;
+                        .progress-bar {
+                            background-color: #fb850a;
+                        }
+                    }
+                }
                 .about-me-card {
                     background-color: #fff;
                     padding: 10px;
@@ -24,6 +46,9 @@
                         margin-bottom: 0;
                         font-size: 14px;
                         text-transform: uppercase;
+                        &:hover {
+                            color: #fb850a;
+                        }
                     }
                     .cam-icon {
                         margin-bottom: 0;
@@ -32,7 +57,7 @@
                     }
                 }
                 .show-me-card {
-                    background-color: #3150cb;
+                    background-color: #fb850a;
                     padding: 10px;
                     display: flex;
                     align-items: center;
@@ -51,14 +76,24 @@
                         align-items: center;
                         margin-bottom: 0;
                         li {
-                            width: 25%;
-                            background-color: #637ef7;
-                            padding: 10px;
+                            width: 33%;
+                            background-color: #fdaa54;
+                            padding: 0 10px;
                             display: flex;
                             margin: 0 5px;
                             align-items: center;
-                            &:nth-child(1) {
-                                background-color: #2461e4;
+                            select {
+                                background-color: #fdaa54;
+                                border: none;
+                                color: #fff;
+                                cursor: pointer;
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                                option {
+                                    background-color: #fff;
+                                    color: #000;
+                                }
                             }
                             i {
                                 margin-right: 10px;
@@ -80,10 +115,14 @@
                 .see-all {
                     text-align: end;
                     p {
-                        color: #3150cb;
+                        color: #000;
                         text-transform: uppercase;
                         font-size: 14px;
-                        font-weight: 600;
+                        font-weight: 600; 
+                        cursor: pointer;
+                        &:hover {
+                            color: #fb850a;
+                        }
                     }
                 }
                 .favourite-university-card {
@@ -139,7 +178,7 @@
                         }
                         button {
                             border: none;
-                            background-color: orange;
+                            background-color: #fb850a;
                             color: #fff;
                             font-size: 14px;
                             padding: 5px 10px;
@@ -150,15 +189,19 @@
                         table {
                             thead {
                                 th {
-                                    background-color: #637ef7;
-                                    border: none;
+                                    background-color: #fb850a;
                                     color: #fff;
                                 }
                             }
                             tbody {
                                 tr {
                                     td {
-                                        border: none;
+                                        min-height: 50px;
+                                        img {
+                                            width: 50px;
+                                            height: 50px;
+                                            margin-right: 10px;
+                                        }
                                     }
                                 }
                             }
@@ -194,23 +237,14 @@
                     }
                 }
             }
-            .profile-progress-bar {
-                .profile-text {
-                    display: flex;
-                    justify-content: space-between;
-                    p {
-                    color: #3150cb;
-                    font-size: 14px;
-                    margin-bottom: 5px;
-                    font-weight: 700;
+            .student-detailed-info {
+                ul {
+                    li {
+                        margin-bottom: 10px;
                     }
                 }
             }
             .profile-btns {
-                margin-top: 100px;
-                @include mobile {
-                    margin-top: 0;
-                }
                 .views {
                     margin: 10px 0;
                     button {
@@ -223,10 +257,14 @@
                 }
                 .edit-profile {
                     margin: 10px 0;
+                    button {
+                        background-color: #fb850a;
+                        color: #fff;
+                        border: none;
+                        font-size: 14px;
+                        padding: 5px 10px;
+                    }
                 }
-            }
-            .progress {
-                height: 0.5rem !important;
             }
         }
     }
