@@ -10,8 +10,4 @@ export class UniversitySearchResultsComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {}
-
-  onNavigateToStudentDashboard() {
-    this.router.navigateByUrl("student/dashboard");
-  }
 }

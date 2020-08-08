@@ -14,6 +14,11 @@ const routes: Routes = [
     path: "counsellor",
     loadChildren: "./modules/counselor/counselor.module#CounselorModule",
   },
+  {
+    path: "university",
+    loadChildren:
+      "./modules/universities/universities.module#UniversitiesModule",
+  },
 ];
 
 @NgModule({
