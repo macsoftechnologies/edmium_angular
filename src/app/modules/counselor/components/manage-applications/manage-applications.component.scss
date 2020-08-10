@@ -1,0 +1,99 @@
+.managestudent{
+    margin-bottom: 10px;
+    .boxshadow{
+        box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.45), 0 3px 15px 0 rgba(0, 0, 0, 0.35);
+        transition: .25s box-shadow;
+        background-color: white;
+    }
+    input,select{
+        font-size: 12px;
+    }
+    .search{
+        button{
+            background-color: #0062cc;
+            color: white;
+            font-size: 12px;
+        }
+    }
+    .header{
+        h3{
+            // text-align: center;
+            border-bottom: 3px solid #FFA500;
+            display: inline-block;
+            color: #0062cc;
+            font-weight: 700;
+        }
+        button{
+            position: absolute;
+            top: 5px;
+            right: 17px;    
+            border: 2px solid #0062cc;
+            color: #0062cc;
+            font-weight: 500;
+            background-color: white;
+        }
+    }
+    table{
+        box-shadow: 1px 2px 3px 3px darkgrey;
+        thead{
+            font-size: 12px;
+            background-color: aliceblue;
+            color: cadetblue;
+            text-transform: uppercase;
+            th{
+                // padding: 18px;
+                padding: 16px 6px;
+                vertical-align: baseline;
+                font-size: 11px;
+            }
+        }
+        tbody{
+            font-size: 13px;
+            .searchprogram{
+                color: cadetblue;
+                width: 112px;
+            }
+            .applicationsubmit{
+                width: 232px;
+                .unconditionaloffer{
+                    background-color: green;
+                    width: 220px;
+                }
+                .applicationbackground{
+                    background-color: mediumseagreen;
+                    width: 220px;
+                }
+                .condtional{
+                    width: 220px;
+                    background-color: darkolivegreen;
+                }
+                .caseclosed{
+                    width: 220px;
+                    background-color: steelblue;
+                }
+            }
+            td{
+                // padding: 18px;
+                padding: 16px 6px;
+                font-size: 11px;
+                button{
+                    background: brown;
+                    color: white;
+                    // width: 115px;
+                    border: none;
+                    // display: flex;
+                    justify-content: start;
+                    padding: 5px;
+                    border-radius: 2px;
+                    i{
+                        margin-top: 4px;
+                    }
+                }
+                
+                .saved{
+                    background-color: darkgoldenrod;
+                }
+            }
+        }
+    }
+}

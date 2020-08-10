@@ -1,3 +1,136 @@
-<p>
-  manage-applications works!
-</p>
+<div class="managestudent">
+  <div class="header text-center">
+    <h3>Manage Application</h3>
+    <!-- <button>Register New Student</button> -->
+  </div>
+  <div class="card p-3 mt-4 boxshadow" >
+    <div class="row">
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Date Created">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <!-- <label for="sel1">Choose Status</label> -->
+          <select class="form-control" id="sel1">
+            <option>Choose Status</option>
+            <option>active</option>
+             
+          </select>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+            <option>Choose Intake</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+            <option>Choose Country</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <input type="search" class="form-control" placeholder="Search By Keyword">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group search">
+          <button class="form-control">Search</button>
+        </div>
+      </div>
+    </div>
+    <!-- table -->
+    <div class="table-responsive">
+      <table class="table border " cellpadding="0" cellspacing="0" width="100%">
+        
+        <thead>
+          <tr>
+            <th >Acknowledgement Number</th>
+            <th>Date Created</th>
+            <th>Student Name</th>
+            <th>University Name</th>
+            <th>Program Name</th>
+            <th>Intake</th>
+            <th>Application Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="width: 10%;">22726/20-21</td>
+            <td>01/08/2020 02:40 PM</td>
+            <td>Santhosh Saketh Varnasi</td>
+            <td>Cardiff Metropolitan University</td>
+            <td>MSc Advanced Computer Science</td>
+              <td style="width: 7%;">jan-2021</td>  
+              <td class="applicationsubmit"><button class="d-flex applicationbackground"><i class="fa fa-file-image-o mr-2" aria-hidden="true"></i><span>Application Submitted to the institution</span></button></td>
+            <td class="searchprogram"><i class="fa fa-file-word-o mr-2" aria-hidden="true"></i>View Application</td>
+          </tr>
+          <tr>
+            <td>22726/20-21</td>
+            <td>01/08/2020 02:40 PM</td>
+            <td>Santhosh Saketh Varnasi</td>
+            <td>Cardiff Metropolitan University</td>
+            <td>MSc Advanced Computer Science</td>
+              <td>jan-2021</td>  
+              <td class="applicationsubmit"><button class="d-flex unconditionaloffer"><i class="fa fa-file-image-o mr-2" aria-hidden="true"></i><span>Un-Conditional Offer received</span></button></td>
+            <td class="searchprogram"><i class="fa fa-file-word-o mr-2" aria-hidden="true"></i>View Application</td>
+          </tr><tr>
+            <td>22726/20-21</td>
+            <td>01/08/2020 02:40 PM</td>
+            <td>Santhosh Saketh Varnasi</td>
+            <td>Cardiff Metropolitan University</td>
+            <td>MSc Advanced Computer Science</td>
+              <td>jan-2021</td>  
+              <td class="applicationsubmit"><button class="d-flex applicationbackground"><i class="fa fa-file-image-o mr-2" aria-hidden="true"></i><span>Application Submitted to the institution</span></button></td>
+            <td class="searchprogram"><i class="fa fa-file-word-o mr-2" aria-hidden="true"></i>View Application</td>
+          </tr><tr>
+            <td>22726/20-21</td>
+            <td>01/08/2020 02:40 PM</td>
+            <td>Santhosh Saketh Varnasi</td>
+            <td>Cardiff Metropolitan University</td>
+            <td>MSc Advanced Computer Science</td>
+              <td>jan-2021</td>  
+              <td class="applicationsubmit"><button class="d-flex condtional"><i class="fa fa-file-image-o mr-2" aria-hidden="true"></i><span>Conditional Offer Received</span></button></td>
+            <td class="searchprogram"><i class="fa fa-file-word-o mr-2" aria-hidden="true"></i>View Application</td>
+          </tr><tr>
+            <td>22726/20-21</td>
+            <td>01/08/2020 02:40 PM</td>
+            <td>Santhosh Saketh Varnasi</td>
+            <td>Cardiff Metropolitan University</td>
+            <td>MSc Advanced Computer Science</td>
+              <td>jan-2021</td>  
+              <td class="applicationsubmit"><button class="d-flex caseclosed"><i class="fa fa-file-excel-o mr-2" aria-hidden="true"></i><span>Case Closed</span></button></td>
+            <td class="searchprogram"><i class="fa fa-file-word-o mr-2" aria-hidden="true"></i>View Application</td>
+          </tr><tr>
+            <td>22726/20-21</td>
+            <td>01/08/2020 02:40 PM</td>
+            <td>Santhosh Saketh Varnasi</td>
+            <td>Cardiff Metropolitan University</td>
+            <td>MSc Advanced Computer Science</td>
+              <td>jan-2021</td>  
+              <td class="applicationsubmit"><button class="d-flex caseclosed"><i class="fa fa-file-excel-o mr-2" aria-hidden="true"></i><span>Case Closed - Student Not Qualified</span></button></td>
+            <td class="searchprogram"><i class="fa fa-file-word-o mr-2" aria-hidden="true"></i>View Application</td>
+          </tr><tr>
+            <td>22726/20-21</td>
+            <td>01/08/2020 02:40 PM</td>
+            <td>Santhosh Saketh Varnasi</td>
+            <td>Cardiff Metropolitan University</td>
+            <td>MSc Advanced Computer Science</td>
+              <td>jan-2021</td>  
+              <td class="applicationsubmit"><button class="d-flex applicationbackground"><i class="fa fa-file-image-o mr-2" aria-hidden="true"></i><span>Application Submitted to the institution</span></button></td>
+            <td class="searchprogram"><i class="fa fa-file-word-o mr-2" aria-hidden="true"></i>View Application</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</div>
