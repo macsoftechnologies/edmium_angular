@@ -1,0 +1,62 @@
+.upload-documents {
+    margin:25px 0px;    
+    
+    .card {
+
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+        border-color: rgba(223,225,229,0);
+        border-radius: 5px;
+        padding:15px 18px;
+
+        h3 {
+            // padding: 15px 10px 0px 10px;
+        }
+
+        p {
+            // padding: 5px 10px 0px 10px;
+            margin-bottom: 15px;
+        }
+
+        .upload-doc {
+            
+            // padding: 15px 30px;
+
+            .total-documents {
+                margin-bottom: 15px;
+
+                .docs {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                p {
+                    color: #000;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    font-size: 17px;
+                }
+            }
+
+            .submit-button {
+                padding: 50px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                text-align: center;
+                
+                button {
+                    padding: 12px 28px;
+                    border-radius: 5px;
+                    background: #fb850a;
+                    color: #fff;
+                    border: 1px solid #fb850a;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+}

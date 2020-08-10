@@ -1,23 +1,25 @@
 <div class="col-md-12">
   <div class="row">
-    <div class="col-md-2">
-      <ul>
-        <li>
-          <a routerLink="dashboard">DashBoard</a>
-        </li>
-        <li>
-          <a routerLink="upload_information">Upload Information</a>
-        </li>
-        <li>
-          <a routerLink="candidate-search">Candidate Search</a>
-        </li>
-        <li>
-          <a routerLink="manage-students">Manage Students</a>
-        </li>
-        <li>
-          <a routerLink="documents-upload">Document Upload</a>
-        </li>
-      </ul>
+    <div class="col-md-2 sticky-div p-0">
+      <div class="university-menu">
+        <ul>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <span><i class="fa fa-dashboard"></i></span>&nbsp;&nbsp;<a routerLink="dashboard">DashBoard</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <span><i class="fa fa-thumb-tack" aria-hidden="true"></i></span>&nbsp;&nbsp;<a routerLink="upload_information">Upload Information</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <span><i class="fa fa-user-o"></i></span>&nbsp;&nbsp;<a routerLink="candidate-search">Candidate Search</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <span><i class="fa fa-pencil"></i></span>&nbsp;&nbsp;<a routerLink="manage-students">Manage Students</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <span><i class="fa fa-file" aria-hidden="true"></i></span>&nbsp;&nbsp;<a routerLink="documents-upload">Document Upload</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="col-md-10">
       <router-outlet></router-outlet>
