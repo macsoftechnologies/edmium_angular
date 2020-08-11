@@ -161,22 +161,107 @@
               border-radius: 0;
               width: 731px;
               margin-bottom: 20px;
+              padding: 20px;
+              .common-edit-card-styles {
+                .card-left-part {
+                  display: flex;
+                  justify-content: space-between;
+                  h6 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: #333;
+                    span {
+                      font-size: 14px;
+                    }
+                  }
+                  p {
+                    color: #4A90E2;
+                    font-weight: 600;
+                    font-size: 15px;
+                  }
+                }
+                p {
+                  font-size: 13px;
+                  color: #adadad;
+                }
+              }
             }
             .attach-resume-card {
-              height: 730px;
+              // height: 450px;
+              padding: 20px;
+              .attach-resume-heading {
+                h6 {
+                  font-size: 21px;
+                  color: #666;
+                  font-family: Roboto,sans-serif;
+                  font-weight: 700;
+                }
+                p {
+                  font-size: 14px;
+                  color: #adadad;
+                }
+              }
+              .upload-file-section {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+                border: dotted 1px #ccc;
+                button {
+                  color: #fff;
+                  background-color: #4A90E2;
+                  border: none;
+                  padding: 10px 30px;
+                  font-size: 14px;
+                  font-weight: 500;
+                  margin-bottom: 5px;
+                }
+                p {
+                  margin-bottom: 0px;
+                  font-size: 12px;
+                  color: #9c9c9c;
+                }
+              }
+              .file-upload-bottom {
+                text-align: center;
+                .seperator {
+                  margin: 35px 0 5px;
+                  font-size: 20px;
+                  font-weight: 700;
+                  span {
+                    border-top: 1px solid #000;
+                    display: inline-block;
+                    width: 60px;
+                    margin: 0 12px;
+                    vertical-align: middle;
+                  }
+                }
+                .seperate-text {
+                  font-size: 13px;
+                }
+              }
             }
-            .resume-headline-card {
-              height: 120px;
-            }
-            .key-skills-card {
-              height: 150px;
-            }
+            // .resume-headline-card {
+            //   // height: 120px;
+            //   padding: 20px;
+            // }
+            // .key-skills-card {
+            //   height: 150px;
+            // }
             .education-card {
-              height: 120px;
+              // height: 120px;
+              ul {
+                li {
+                  width: 100%;
+                  height: 35px;
+                  color: #4A90E2;
+                }
+              }
             }
-            .projects-card {
-              height: 387px;
-            }
+            // .projects-card {
+            // height: 387px;
+            // }
           }
         }
       }

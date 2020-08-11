@@ -30,7 +30,7 @@
               <div class="user-info-col">
                 <p>
                   <i class="fa fa-phone" aria-hidden="true"></i>
-                  8885631240
+                  8885631250
                   <span>verify</span>
                 </p>
                 <p>
@@ -46,10 +46,7 @@
                 <span>60%</span>
               </div>
               <div class="progress border" style="height: 10px;">
-                <div
-                  class="progress-bar bg-white"
-                  style="width: 60%; height: 10px;"
-                ></div>
+                <div class="progress-bar bg-white" style="width: 60%; height: 10px;"></div>
               </div>
             </div>
           </div>
@@ -82,26 +79,91 @@
           </div>
           <div class="update-cards-wrapper">
             <div class="edit-card attach-resume-card" #attach_resume>
-              <p>
-                Attach Resume
-                <i
-                  class="fa fa-pencil"
-                  aria-hidden="true"
-                  (click)="onPopUpModal()"
-                ></i>
-              </p>
+              <div class="attach-resume-heading">
+                <h6>
+                  Attach Resume
+                  <i class="fa fa-pencil" aria-hidden="true" (click)="onPopUpModal()"></i>
+                </h6>
+                <p>Resume is the most important document recruiters look for. Recruiters generally
+                  do not look at profiles without resumes.</p>
+              </div>
+              <div class="upload-file-section">
+                <!-- class="form-group" -->
+                <div>
+                  <button type="button" (click)="fileInput.click()">
+                    <span>UPLOAD RESUME</span>
+                    <input #fileInput type="file" id="file" style="display: none;">
+                  </button>
+                </div>
+                <p>Supported Formats: doc,docx,rtf,pdf,upto 2 MB</p>
+              </div>
+              <div class="file-upload-bottom">
+                <div class="seperator">
+                  <span></span>
+                  or
+                  <span></span>
+                </div>
+                <div class="seperate-text">
+                  If you do not have a resume document, you may write your brief professional profile
+                  <a href="#">here</a>
+                </div>
+              </div>
             </div>
             <div class="edit-card resume-headline-card" #resume_headline>
-              <p>Resume Headline</p>
+              <div class="common-edit-card-styles">
+                <div class="card-left-part">
+                  <h6>Resume Headline &nbsp;&nbsp;<span>Add 68%</span></h6>
+                  <p>ADD RESUME HEADLINE</p>
+                </div>
+                <p>It is the first thing recruiters notice in your profile. Write concisely what makes
+                  you unique and right person for the job you are looking for.
+                </p>
+              </div>
             </div>
             <div class="edit-card key-skills-card" #key_skills>
-              <p>Key Skills</p>
+              <div class="common-edit-card-styles">
+                <div class="card-left-part">
+                  <h6>Key Skills &nbsp;&nbsp;<span>Add 8%</span></h6>
+                  <p>ADD KEY SKILLS</p>
+                </div>
+                <p>
+                  Tell recruiters what you know or what you are known for e.g. Direct Marketing, Oracle,
+                  Java etc. We will send you job recommendations based on these skills.
+                </p>
+              </div>
             </div>
             <div class="edit-card education-card" #student_education>
-              <p>Education</p>
+              <div class="common-edit-card-styles">
+                <div class="card-left-part">
+                  <h6>Education &nbsp;&nbsp;<span>Add 10%</span></h6>
+                  <p>ADD EDUCATION</p>
+                </div>
+                <p>
+                  Please mention your education details. You can add details about school, college and degree.
+                  This will increase your profile strength.
+                </p>
+              </div>
+              <div class="education-details-links">
+                <ul>
+                  <li>Add Doctorate/PhD</li>
+                  <li>Add Masters/Post-Graduation</li>
+                  <li>Add Graduation/Diploma</li>
+                  <li>Add 12th</li>
+                  <li>Add 10th</li>
+                  <li>Add Below 10th</li>
+                </ul>
+              </div>
             </div>
             <div class="edit-card projects-card" #student_projects>
-              <p>Projects</p>
+              <div class="common-edit-card-styles">
+                <div class="card-left-part">
+                  <h6>Projects</h6>
+                  <p>ADD PROJECT</p>
+                </div>
+                <p>
+                  Add details about projects yuo have done in college, internship or at work.
+                </p>
+              </div>
             </div>
           </div>
         </div>
