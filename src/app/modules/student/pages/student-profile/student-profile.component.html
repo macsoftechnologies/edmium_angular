@@ -70,11 +70,27 @@
                 Attach Resume <span>Upload</span>
               </li>
               <li (click)="scrollToEle(resume_headline)">Resume Headline</li>
-              <li (click)="scrollToEle(key_skills)">Key Skills</li>
+              <li (click)="scrollToEle(key_skills)">
+                Other Skills Set <span>Add</span>
+              </li>
+              <li (click)="scrollToEle(employment)">
+                Employment <span>Add</span>
+              </li>
               <li (click)="scrollToEle(student_education)">
                 Education <span>Add</span>
               </li>
-              <li (click)="scrollToEle(student_projects)">Projects</li>
+              <li (click)="scrollToEle(student_education)">
+                Upload documents <span>Add</span>
+              </li>
+              <li (click)="scrollToEle(student_education)">
+                Preferences<span>Add</span>
+              </li>
+              <li (click)="scrollToEle(student_education)">
+                Achievements <span>Add</span>
+              </li>
+              <li (click)="scrollToEle(student_projects)">
+                Documents <span>Add</span>
+              </li>
             </ul>
           </div>
           <div class="update-cards-wrapper">
@@ -162,6 +178,17 @@
                 </div>
                 <p>
                   Add details about projects yuo have done in college, internship or at work.
+                </p>
+              </div>
+            </div>
+            <div class="edit-card projects-card" #employment>
+              <div class="common-edit-card-styles">
+                <div class="card-left-part">
+                  <h6>Employment &nbsp;&nbsp;<span>Add 18%</span></h6>
+                  <p>ADD EMPLOYMENT</p>
+                </div>
+                <p>
+                  Mention your employment details including your current and previous company work experience.
                 </p>
               </div>
             </div>
