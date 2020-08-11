@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upload-information.component.scss']
 })
 export class UploadInformationComponent implements OnInit {
-
+  isModal: boolean = false;
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  scrollToEle(el: HTMLElement) {
+    el.scrollIntoView({ behavior: "smooth" });
+    el.scrollTo(0, 10);
   }
+
+  onPopUpModal() {
+    this.isModal = !this.isModal;
+  }
+  onCloseModal() {
+    this.onPopUpModal();
+  }
+
 
 }

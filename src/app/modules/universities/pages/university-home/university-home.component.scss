@@ -39,3 +39,10 @@
     color: #fff;
     border-right: 4px solid #000;
 }
+
+
+.university-menu ul li:focus {
+    border: none;
+    outline: none;
+    border-right: 4px solid #000;
+}
