@@ -1,0 +1,41 @@
+.sticky-div {    
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+    background: #cccccc26;
+    padding: 0px 15px;
+    
+    .university-menu {
+        padding: 30px 0px;
+    
+        ul {
+            
+            // padding: 0px 10px;
+    
+            li {
+                padding: 15px 35px;
+
+                a {
+                    color: #000000;
+                    font-size: 17px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.university-menu li:hover {
+    background: #cccccc5e;
+    border-right: 4px solid #000;
+    cursor:pointer;
+}
+
+.university-menu li a hover {
+    color: #fff;
+}
+
+.active {
+    background-color: #fb850a;
+    color: #fff;
+    border-right: 4px solid #000;
+}
