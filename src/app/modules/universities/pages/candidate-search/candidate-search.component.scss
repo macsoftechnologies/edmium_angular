@@ -72,7 +72,12 @@
     padding:15px 0px;
 
     .pro-head {
-        font-size: 30px !important;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .pro-head1 {
+        font-size: 28px;
         font-weight: bold;
     }
 
@@ -88,14 +93,21 @@
 
             h3 {
             padding: 15px 20px;
+            font-size: 18px;
+            margin: 0;
         }
 
         .profile-details {
-            padding: 30px 30px;
+            padding: 15px 30px;
             background: #e4eef6;
 
+            label {
+                font-size: 18px;
+                font-weight: 600;
+            }
+
             p {
-                font-weight: bold;
+                // font-weight: bold;
             }
         }
         

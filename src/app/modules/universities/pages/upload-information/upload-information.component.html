@@ -1,9 +1,9 @@
 <section>
   <div class="container-fluid">
     <div class="upload-info">
-      <h3>Upload Information</h3>
+      <!-- <h3>Upload Information</h3> -->
 
-      <div>
+      <!-- <div>
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown button
@@ -14,7 +14,321 @@
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </div>
+      </div> -->
+
+      <div id="student_profile">
+        <div class="student-profile-wrapper">
+          <div class="profile-container">
+            <div class="profile-update-cards">
+              <div class="profile-update-cards-wrapper">
+                <div class="side-quick-links">
+                  <p class="quick-links">Quick Links</p>
+                  <ul>
+                    <li (click)="scrollToEle(attach_resume)">Scholarships</li>
+                    <li (click)="scrollToEle(resume_headline)">Brochures</li>
+                    <li (click)="scrollToEle(key_skills)">Events</li>
+                    <li (click)="scrollToEle(student_education)">Internal Counsellor Training</li>
+                    <li (click)="scrollToEle(student_projects)">Course Circulam</li>
+                  </ul>
+                </div>
+                <div class="update-cards-wrapper">
+
+                  <div class="edit-card" #attach_resume>
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <div class="upload-heading">
+                            <h3>Scholarship Details</h3>
+                            <p>You can watch scholarship details here</p>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="btn-upload">
+                            <button type="button" class="btn bro-upload">
+                              <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                   
+                    
+                    <div class="brochures">                      
+                      <div class="managestudent">
+                        <div class="">                          
+                          <div class="table-responsive">
+                            <table class="table border">
+                              <thead>
+                                <tr>
+                                  <th>S.No</th>
+                                  <th>Name Of The Scholarship</th>
+                                  <th>Eligibility</th>
+                                  <th>Information Link</th>
+                                  <th>Actions</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>Aberystwyth International Scholarship</td>
+                                  <td>Selection will be on the basis of academic performance
+                                      and the applicant’s suitability for their proposed course.</td>
+                                  <td>By the end of 20th August 2019</td>
+                                  <td>
+                                    <div class="actions">
+                                      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                                      <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>Aberystwyth International Scholarship</td>
+                                  <td>Selection will be on the basis of academic performance
+                                      and the applicant’s suitability for their proposed course.</td>
+                                  <td>By the end of 20th August 2019</td>
+                                  <td>
+                                    <div class="actions">
+                                      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                                      <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>                    
+                  </div>
+                  
+                  <div class="edit-card resume-headline-card " #resume_headline>
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <div class="upload-heading">
+                            <h3>Brochure Details</h3>
+                            <p>You can upload the Brochures here</p>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="btn-upload">
+                            <button type="button" class="btn bro-upload">
+                              <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                   
+                    
+                    <div class="brochures">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="brochure-image">
+                              <img src="assets/images/brochure1.jpg">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="brochure-image">
+                              <img src="assets/images/brochure1.jpg">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="brochure-image">
+                              <img src="assets/images/brochure1.jpg">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+
+                  <div class="edit-card key-skills-card" #key_skills>
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-9"> 
+                          <div class="upload-heading">
+                            <h3>Events Details</h3>
+                            <p>You can upload the Differents events here</p>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="btn-upload">
+                            <button type="button" class="btn bro-upload">
+                              <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                   
+                    
+                    <div class="brochures">                      
+                      <div class="managestudent">
+                        <div class="">                          
+                          <div class="table-responsive">
+                            <table class="table border">
+                              <thead>
+                                <tr>
+                                  <th>S.No</th>
+                                  <th>Event Name</th>
+                                  <th>Date</th>
+                                  <th>Actions</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>Science Fare</td>
+                                  <td>11-02-2020</td>
+                                  <td>
+                                    <div class="actions">
+                                      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                                      <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>Science Fare</td>
+                                  <td>11-02-2020</td>
+                                  <td>
+                                    <div class="actions">
+                                      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                                      <span><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>                    
+                  </div>
+
+                  <div class="edit-card education-card" #student_education>
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <div class="upload-heading">
+                            <h3>Internal Counsellor Training Details</h3>
+                            <p>You can upload the training Timings</p>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="btn-upload">
+                            <button type="button" class="btn bro-upload">
+                              <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="brochures">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="brochure-image">
+                              <img src="assets/images/brochure1.jpg">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="brochure-image">
+                              <img src="assets/images/brochure1.jpg">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="brochure-image">
+                              <img src="assets/images/brochure1.jpg">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+
+                  <div class="edit-card projects-card" #student_projects>
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-md-9">
+                          <div class="upload-heading">
+                            <h3>Internal Course Circulam Details</h3>
+                            <p>You can upload the course circulam details here</p>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="btn-upload">
+                            <button type="button" class="btn bro-upload">
+                              <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                    <div class="brochures">                      
+                      <div class="managestudent">
+                        <div class="">                          
+                          <div class="table-responsive">
+                            <table class="table border">
+                              <thead>
+                                <tr>
+                                  <th>S.No</th>
+                                  <th>Name</th>
+                                  <th>Details</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>Aberystwyth International Scholarship</td>
+                                  <td>Selection will be on the basis of academic performance
+                                      and the applicant’s suitability for their proposed course.</td>
+                                  <td>
+                                    <div class="actions">
+                                      <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>1</td>
+                                  <td>Aberystwyth International Scholarship</td>
+                                  <td>Selection will be on the basis of academic performance
+                                      and the applicant’s suitability for their proposed course.</td>
+                                  <td>
+                                    <div class="actions">
+                                      <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Modal -->
+          <div class="modal-popup" *ngIf="isModal">
+            <div class="modal-wrapper">
+              <p>Modal testing</p>
+              <i class="fa fa-times" aria-hidden="true" (click)="onCloseModal()"></i>
+            </div>
+          </div>
+        </div>
       </div>
+      
+
+
+
+
     </div>
   </div>
 </section>

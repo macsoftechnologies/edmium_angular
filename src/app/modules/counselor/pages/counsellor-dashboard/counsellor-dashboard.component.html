@@ -1,5 +1,46 @@
 <div class="col-md-12">
   <div class="row">
+    <div class="col-md-2 sticky-div p-0">
+      <div class="university-menu">
+        <ul>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <span><i class="fa fa-dashboard"></i></span>&nbsp;&nbsp;<a routerLink="search-program">Search Program</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <span><i class="fa fa-thumb-tack" aria-hidden="true"></i></span>&nbsp;&nbsp;<a routerLink="manage-universities">Manage universities</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <span><i class="fa fa-user-o"></i></span>&nbsp;&nbsp;<a routerLink="manage-student">Manage Student</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <span><i class="fa fa-pencil"></i></span>&nbsp;&nbsp;<a routerLink="manage-application">Manage Application</a>
+          </li>
+          <li [routerLinkActive]="['active']">
+            <span><i class="fa fa-file" aria-hidden="true"></i></span>&nbsp;&nbsp;<a routerLink="documents-upload">Document Upload</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="col-md-12">
+  <div class="row">
     <div class="col-md-2">
       <ul>
         <li>
@@ -23,4 +64,4 @@
       <router-outlet></router-outlet>
     </div>
   </div>
-</div>
+</div> -->
