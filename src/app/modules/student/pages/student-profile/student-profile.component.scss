@@ -2,6 +2,7 @@
 
 #student_profile {
   .student-profile-wrapper {
+    padding: 10px 0;
     .profile-container {
       max-width: 990px;
       width: 990px;
@@ -126,6 +127,32 @@
             border-radius: 0;
             position: sticky;
             top: 15px;
+            p {
+              margin: 30px 18px 0;
+              border-bottom: 1px solid #eee;
+              padding-bottom: 12px;
+              font-weight: 600;
+              font-size: 20px;
+              color: #666;
+            }
+            ul {
+              li {
+                padding: 10px 20px;
+                color: #666;
+                cursor: pointer;
+                font-size: 13px;
+                span {
+                  float: right;
+                  text-transform: uppercase;
+                  color: #4a90e2;
+                  font-weight: 500;
+                  font-size: 14px;
+                }
+                &:hover {
+                  color: #09c;
+                }
+              }
+            }
           }
           .update-cards-wrapper {
             .edit-card {
