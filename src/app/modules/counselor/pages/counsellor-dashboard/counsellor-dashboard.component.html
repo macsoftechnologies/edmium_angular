@@ -1,26 +1,113 @@
-<div class="col-md-12">
-  <div class="row">
-    <div class="col-md-2">
-      <ul>
-        <li>
-          <a routerLink="search-program">Search Program</a>
-        </li>
-        <li>
-          <a routerLink="manage-universities">Manage universities</a>
-        </li>
-        <li>
-          <a routerLink="manage-student">Manage Student</a>
-        </li>
-        <li>
-          <a routerLink="manage-application">Manage Application</a>
-        </li>
-        <li>
-          <a routerLink="documents-upload">Document Upload</a>
-        </li>
-      </ul>
-    </div>
-    <div class="col-md-10">
-      <router-outlet></router-outlet>
+<div class="student-dashboard">
+  <div class="container-fluid student-dashboard-container">
+    <div class="row student-dashboard-row">
+      <div class="col-md-2 student-dashboard-profile">
+        <div class="student-profile">
+          <div class="student-overall-details">
+            <div class="student-info">
+              <div class="student-image">
+                <img src="assets/images/pro.jfif" alt="" />
+              </div>
+              <div class="student-name">
+                <h4>Rupert Grint</h4>
+                <small>Student</small>
+              </div>
+            </div>
+            <div class="student-detailed-info d-none">
+              <ul>
+                <li>Qualification :</li>
+                <li>Area of interest :</li>
+                <li>Preferred Country :</li>
+                <li>Preferred Intake :</li>
+                <li>Dream University :</li>
+                <li>Verified :</li>
+              </ul>
+            </div>
+            <div class="side-bar-btns">
+              <div class="follow-btn">
+                <span>Follow</span>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <div class="mail-btn">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="bit-btn">
+                <i class="fa fa-btc"></i>
+              </div>
+            </div>
+            <div class="about-me">
+              <div class="about-me-header">
+                <p><span>About me</span> <i class="fa fa-edit"></i></p>
+              </div>
+              <div class="about-body">
+                <p>
+                  Hi, I'm Rupert Grint. I know my name is a bit long, but the
+                  reason I put the full name here is that it will take a long
+                  space to fit this text perfectly here.
+                </p>
+              </div>
+            </div>
+            <div class="actvities">
+              <div class="actvities-header">
+                <p><span>Activities</span></p>
+              </div>
+              <div class="activities-list">
+                <ul>
+                  <li>
+                    <span class="activities-icon-bg"
+                      ><i class="fa fa-users"></i
+                    ></span>
+                    <a href="javascript:void(0)" routerLink="search-program">
+                      <span>Search Program <span class="indicator"></span></span
+                    ></a>
+                  </li>
+                  <li>
+                    <span class="activities-icon-bg"
+                      ><i class="fa fa-graduation-cap"></i
+                    ></span>
+                    <a
+                      href="javascript:void(0)"
+                      routerLink="manage-universities"
+                    >
+                      <span>Manage Universities</span></a
+                    >
+                  </li>
+                  <li>
+                    <span class="activities-icon-bg"
+                      ><i class="fa fa-calendar"></i
+                    ></span>
+                    <a href="javascript:void(0)" routerLink="manage-student">
+                      <span>Manage Student</span></a
+                    >
+                  </li>
+                  <li>
+                    <span class="activities-icon-bg"
+                      ><i class="fa fa-briefcase"></i
+                    ></span>
+                    <a
+                      href="javascript:void(0)"
+                      routerLink="manage-application"
+                    >
+                      <span>Manage Application</span></a
+                    >
+                  </li>
+                  <li>
+                    <span class="activities-icon-bg"
+                      ><i class="fa fa-bars"></i
+                    ></span>
+                    <a href="javascript:void(0)" routerLink="documents-upload">
+                      <span>Document Upload</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10 student-dashboard-about">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>

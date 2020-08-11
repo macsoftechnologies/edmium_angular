@@ -1,14 +1,13 @@
-<div [ngStyle]="{ backgroundImage: 'url(./assets/images/search_counselor.jpg)' }">
+<div class="searchPanel">
   <div id="course">
     <div id="bgimg">
-      <div class="container" >
+      <div class="container">
         <h3>
           Get Customised and Personalised Help to
           <span class="title1">APPLY & ENROLL</span> at Top Universities Abroad
         </h3>
 
         <div class="row">
-          
           <div class="col-md-1"></div>
           <div class="col-md-11">
             <div class="hpsearchmain clearfix hpsearchmaintop" id="divout">
@@ -16,23 +15,23 @@
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
                     <a
-                      class="nav-link active "
+                      class="nav-link active"
                       data-toggle="tab"
                       href="#home"
                       id="searchbyeaxamScore  newtab"
                     >
-                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
                       Search by Exam Scores <span class="toggleor">OR</span></a
                     >
                   </li>
-                  <li class="nav-item" >
+                  <li class="nav-item">
                     <a
                       class="nav-link searchbyprog"
                       data-toggle="tab"
                       href="#menu1"
                       id="searchbyeaxamScore"
                     >
-                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
                       Search by Courses <span class="toggleor">OR</span></a
                     >
                   </li>
@@ -244,22 +243,21 @@
 
                 <div class="col-md-6">
                   <div class="form-group">
-                     <input type="text" class="form-control" placeholder="e.g. Massachusetts Institute of Technology">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="e.g. Massachusetts Institute of Technology"
+                    />
                   </div>
                 </div>
                 <div class="col-md-3"></div>
-
-                 
-                 
-                 
               </div>
 
               <button
                 class="filtersearchbtn btn btn-md"
                 (click)="onNavigateToStudentDashboard()"
               >
-                Search 
-                
+                Search
               </button>
             </div>
           </div>

@@ -7,11 +7,7 @@ import { HeaderComponent } from "./shared/components/header/header.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
 import { LoginComponent } from "./shared/components/login/login.component";
 import { RegisterComponent } from "./shared/components/register/register.component";
-import { UniversitySearchResultsComponent } from "./pages/university-search-results/university-search-results.component";
-import { SearchUniversitiesComponent } from "./pages/search-universities/search-universities.component";
-import { SearchUniversityPanelComponent } from "./components/search-university-panel/search-university-panel.component";
-import { UniversitySearchFilterComponent } from "./components/university-search-filter/university-search-filter.component";
-import { UniversityComponent } from "./components/university/university.component";
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -20,13 +16,8 @@ import { UniversityComponent } from "./components/university/university.componen
     FooterComponent,
     LoginComponent,
     RegisterComponent,
-    UniversitySearchResultsComponent,
-    SearchUniversitiesComponent,
-    SearchUniversityPanelComponent,
-    UniversitySearchFilterComponent,
-    UniversityComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,401 @@
+@import "../../../../../assets/responsive";
+@import "../../../../../assets/variables";
+
+.student-dashboard {
+  .student-dashboard-container {
+    background-color: #f5f5f5;
+    .student-dashboard-row {
+      .student-dashboard-profile {
+        background-color: #fff;
+        padding: 15px 25px 0;
+      }
+      .student-dashboard-about {
+        padding: 15px 45px;
+        @include mobile {
+          padding: 15px;
+        }
+        .profile-progress-bar {
+          margin-bottom: 15px;
+          .profile-text {
+            display: flex;
+            justify-content: space-between;
+            p {
+              color: #000;
+              font-size: 14px;
+              margin-bottom: 5px;
+              font-weight: 700;
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+          .progress {
+            height: 0.5rem !important;
+            .progress-bar {
+              background-color: $primary-color;
+            }
+          }
+        }
+        .about-me-card {
+          background-color: #fff;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 25px;
+          .about-me-text {
+            margin-bottom: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+          .cam-icon {
+            margin-bottom: 0;
+            font-size: 20px;
+            color: #ccc;
+          }
+        }
+        .show-me-card {
+          background-color: $primary-color;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 25px;
+          .show-me-text {
+            color: #fff;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            width: 10%;
+            text-align: center;
+          }
+          ul {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 0;
+            li {
+              width: 33%;
+              background-color: #fdaa54;
+              padding: 0 10px;
+              display: flex;
+              margin: 0 5px;
+              align-items: center;
+              select {
+                background-color: #fdaa54;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+                &:focus {
+                  box-shadow: none;
+                }
+                option {
+                  background-color: #fff;
+                  color: #000;
+                }
+              }
+              i {
+                margin-right: 10px;
+                color: #fff;
+              }
+              p {
+                margin-bottom: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #fff;
+              }
+            }
+          }
+        }
+        .see-all {
+          text-align: end;
+          p {
+            color: #000;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+        .favourite-university-card {
+          display: flex;
+          margin-bottom: 10px;
+          @include mobile {
+            flex-wrap: wrap;
+          }
+          .fav-card-block {
+            max-width: 300px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            &:last-child {
+              margin-right: 0;
+            }
+            @include mobile {
+              max-width: 100%;
+              margin-right: 0px;
+            }
+          }
+        }
+        .interested-universities {
+          .interested-text {
+            p {
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+          }
+          .interested-universities-block {
+            display: flex;
+            margin-bottom: 15px;
+            @include mobile {
+              flex-wrap: wrap;
+            }
+            .alternate-universities {
+              max-width: 250px;
+              margin-bottom: 10px;
+              margin-right: 10px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+        .universities-list {
+          .universities-list-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            .universities-list {
+              margin-bottom: 0;
+              font-size: 20px;
+            }
+            button {
+              border: none;
+              background-color: $primary-color;
+              color: #fff;
+              font-size: 14px;
+              padding: 5px 10px;
+            }
+          }
+          .university-table {
+            background-color: #fff;
+            table {
+              thead {
+                th {
+                  background-color: $primary-color;
+                  color: #fff;
+                }
+              }
+              tbody {
+                tr {
+                  td {
+                    min-height: 50px;
+                    img {
+                      width: 50px;
+                      height: 50px;
+                      margin-right: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /****** Student Profile Styles ********/
+  .student-profile {
+    height: 100%;
+    .student-overall-details {
+      height: 100%;
+      position: relative;
+      .student-info {
+        .student-image {
+          height: 95px;
+          width: 95px;
+          margin: auto;
+          img {
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .student-name {
+          text-align: center;
+          margin-bottom: 1rem;
+          h4 {
+            font-size: 18px;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            color: #000;
+          }
+          small {
+            color: #a1a5c5;
+          }
+        }
+      }
+      .student-detailed-info {
+        ul {
+          li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .profile-btns {
+        .views {
+          margin: 10px 0;
+          button {
+            padding: 3px 10px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 14px;
+            border: none;
+          }
+        }
+        .edit-profile {
+          margin: 10px 0;
+          button {
+            background-color: $primary-color;
+            color: #fff;
+            border: none;
+            font-size: 14px;
+            padding: 5px 10px;
+          }
+        }
+      }
+      .side-bar-btns {
+        display: flex;
+        .follow-btn {
+          width: 50%;
+          color: #fff;
+          background-color: $primary-color;
+          padding: 5px 15px;
+          border-radius: 5px;
+          margin-right: 5px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 13px;
+          font-weight: 600;
+        }
+        .mail-btn {
+          width: 25%;
+          padding: 5px 10px;
+          border: 1px solid $primary-color;
+          margin-right: 5px;
+          border-radius: 5px;
+          text-align: center;
+          i {
+            color: $primary-color;
+            font-size: 17px;
+          }
+        }
+        .bit-btn {
+          width: 25%;
+          padding: 5px 10px;
+          border: 1px solid $primary-color;
+          border-radius: 5px;
+          text-align: center;
+          i {
+            color: $primary-color;
+            font-size: 17px;
+          }
+        }
+      }
+      .about-me {
+        .about-me-header {
+          margin-top: 25px;
+          p {
+            color: #a1a5c5;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            span {
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+        }
+        .about-body {
+          p {
+            font-size: 12px;
+            text-align: justify;
+          }
+        }
+      }
+
+      .actvities {
+        .actvities-header {
+          margin-top: 25px;
+          p {
+            color: #a1a5c5;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            span {
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+        }
+        .activities-list {
+          ul {
+            li {
+              display: flex;
+              align-items: center;
+              margin-bottom: 15px;
+              &:hover {
+                i {
+                  color: #fff;
+                }
+                .activities-icon-bg {
+                  background-color: $primary-color;
+                }
+              }
+              i {
+                color: $primary-color;
+              }
+              span {
+                color: #000;
+              }
+              .activities-icon-bg {
+                background-color: #e9ecfa;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        .indicator {
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background-color: #f94162;
+          margin-left: 10px;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+  /********** End Of student profile styles **********/
+}
