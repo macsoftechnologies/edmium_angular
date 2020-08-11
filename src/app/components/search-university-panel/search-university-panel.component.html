@@ -1,13 +1,14 @@
 <div [ngStyle]="{ backgroundImage: 'url(./assets/images/search_counselor.jpg)' }">
   <div id="course">
     <div id="bgimg">
-      <div class="container">
+      <div class="container" >
         <h3>
           Get Customised and Personalised Help to
           <span class="title1">APPLY & ENROLL</span> at Top Universities Abroad
         </h3>
 
         <div class="row">
+          
           <div class="col-md-1"></div>
           <div class="col-md-11">
             <div class="hpsearchmain clearfix hpsearchmaintop" id="divout">
@@ -20,10 +21,7 @@
                       href="#home"
                       id="searchbyeaxamScore  newtab"
                     >
-                      <i
-                        class="fa fa-list-alt hpprogramicon"
-                        aria-hidden="true"
-                      ></i>
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
                       Search by Exam Scores <span class="toggleor">OR</span></a
                     >
                   </li>
@@ -34,10 +32,7 @@
                       href="#menu1"
                       id="searchbyeaxamScore"
                     >
-                      <i
-                        class="fa fa-list-alt hpprogramicon"
-                        aria-hidden="true"
-                      ></i>
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
                       Search by Courses <span class="toggleor">OR</span></a
                     >
                   </li>
@@ -67,12 +62,12 @@
         <div>
           <div class="tab-content">
             <div id="home" class="container tab-pane active tab-pane1">
-              <div class="row">
-                <div class="col-md-3">
+              <div class="row mt-3">
+                <div class="col-md-2">
                   <div class="form-group">
-                    <label for="sel1">COUNTRY</label>
+                    <label for="sel1">COUNTRY </label>
                     <select class="form-control" id="sel1">
-                      <option>Select</option>
+                      <option>Select Country</option>
                       <option>USA</option>
                       <option>UK</option>
                       <option>Canada</option>
@@ -80,20 +75,20 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <div class="form-group">
                     <label for="sel1">DEGREE</label>
                     <select class="form-control" id="sel1">
-                      <option>Select</option>
+                      <option>Select Degree</option>
                       <option>Masters</option>
                     </select>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form-group">
                     <label for="sel1">COURSES</label>
                     <select class="form-control" id="sel1">
-                      <option>Select</option>
+                      <option>Select Courses</option>
                       <option>Engineering / Technology</option>
                       <option>Business / Management</option>
                       <option>Natural Sciences</option>
@@ -101,11 +96,11 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form-group">
                     <label for="sel1">SPECIALIZATION</label>
                     <select class="form-control" id="sel1">
-                      <option>Select</option>
+                      <option>Select Specialization</option>
                       <option>Industrial / Manufacturing Engineering</option>
                       <option>Chemical Engineering</option>
                       <option>Environmental Science & Engineering</option>
@@ -189,12 +184,12 @@
             </div>
             <div id="menu1" class="container tab-pane fade tab-pane2">
               <br />
-              <div class="row">
-                <div class="col-md-3">
+              <div class="row mt-3">
+                <div class="col-md-2">
                   <div class="form-group">
-                    <label for="sel1">COUNTRY</label>
+                    <label for="sel1">COUNTRY </label>
                     <select class="form-control" id="sel1">
-                      <option>Select</option>
+                      <option>Select Country</option>
                       <option>USA</option>
                       <option>UK</option>
                       <option>Canada</option>
@@ -202,20 +197,20 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <div class="form-group">
                     <label for="sel1">DEGREE</label>
                     <select class="form-control" id="sel1">
-                      <option>Select</option>
+                      <option>Select Degree</option>
                       <option>Masters</option>
                     </select>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form-group">
                     <label for="sel1">COURSES</label>
                     <select class="form-control" id="sel1">
-                      <option>Select</option>
+                      <option>Select Courses</option>
                       <option>Engineering / Technology</option>
                       <option>Business / Management</option>
                       <option>Natural Sciences</option>
@@ -223,11 +218,11 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <div class="form-group">
                     <label for="sel1">SPECIALIZATION</label>
                     <select class="form-control" id="sel1">
-                      <option>Select</option>
+                      <option>Select Specialization</option>
                       <option>Industrial / Manufacturing Engineering</option>
                       <option>Chemical Engineering</option>
                       <option>Environmental Science & Engineering</option>
@@ -244,51 +239,19 @@
             </div>
             <div id="menu2" class="container tab-pane fade tab-pane2">
               <br />
-              <div class="row">
-                <div class="col-md-3">
+              <div class="row mt-3">
+                <div class="col-md-3"></div>
+
+                <div class="col-md-6">
                   <div class="form-group">
-                    <label for="sel1">COUNTRY</label>
-                    <select class="form-control" id="sel1">
-                      <option>Select</option>
-                      <option>USA</option>
-                      <option>UK</option>
-                      <option>Canada</option>
-                      <option>Austrilia</option>
-                    </select>
+                     <input type="text" class="form-control" placeholder="e.g. Massachusetts Institute of Technology">
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="sel1">DEGREE</label>
-                    <select class="form-control" id="sel1">
-                      <option>Select</option>
-                      <option>Masters</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="sel1">COURSES</label>
-                    <select class="form-control" id="sel1">
-                      <option>Select</option>
-                      <option>Engineering / Technology</option>
-                      <option>Business / Management</option>
-                      <option>Natural Sciences</option>
-                      <option>Life Sciences</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="sel1">SPECIALIZATION</label>
-                    <select class="form-control" id="sel1">
-                      <option>Select</option>
-                      <option>Industrial / Manufacturing Engineering</option>
-                      <option>Chemical Engineering</option>
-                      <option>Environmental Science & Engineering</option>
-                    </select>
-                  </div>
-                </div>
+                <div class="col-md-3"></div>
+
+                 
+                 
+                 
               </div>
 
               <button

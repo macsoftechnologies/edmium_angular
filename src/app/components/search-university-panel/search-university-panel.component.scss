@@ -12,6 +12,7 @@
 
 
 .toggleor {
+    
     position: absolute;
     font-size: 13px;
     text-transform: uppercase;
@@ -138,6 +139,7 @@ box-shadow: 1px 1px 3px #afafaf !important;
 
 #containerbg {
     background-color: #fff !important;border-radius: 10px !important;
+    
 }
 
 .tab-pane1{
@@ -151,7 +153,7 @@ box-shadow: 1px 1px 3px #afafaf !important;
 
 }
 
-.fa-list-alt{
+.fa-file-text-o{
   font-size: 35px !important;
   padding: 8px 0px 0px 8px;
   height: 50%;
@@ -173,6 +175,7 @@ box-shadow: 1px 1px 3px #afafaf !important;
 
 #containerbg{
     margin-bottom: -20px;
+    margin-top: -18px;
     
 
 }
@@ -182,4 +185,24 @@ box-shadow: 1px 1px 3px #afafaf !important;
     border-radius: 0px !important;
 }
 
- 
+.nav-tabs {
+    border-bottom: 1px solid #ffffff;
+}
+
+.form-control{
+
+    border: 1px solid #ffffff;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-weight: 500;
+}   
+
+label{
+    color: #000;
+    font-size: 14px;
+}
+
+option{
+    font-size: 18px;
+    color: #000;
+}
