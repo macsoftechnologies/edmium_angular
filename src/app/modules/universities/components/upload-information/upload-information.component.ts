@@ -31,7 +31,9 @@ export class UploadInformationComponent implements OnInit {
 
   /* Add Scholarship button click handler */
   addScholarship() {
-    this.modalService.open(AddScholarshipComponent);
+    this.modalService.open(AddScholarshipComponent, {
+      size:"lg"      
+      });
   }
   /* Add Brochres button click handler */
   addBrochures() {
@@ -39,7 +41,9 @@ export class UploadInformationComponent implements OnInit {
   }
   /* Add Events button click handler */
   addEvents() {
-    this.modalService.open(AddEventComponent);
+    this.modalService.open(AddEventComponent, {
+      size:"lg"      
+      });
   }
   /* Add InternalCounselorTraining button click handler */
   addTraining() {
@@ -47,6 +51,8 @@ export class UploadInformationComponent implements OnInit {
   }
   /* Add Course Curriculum button click handler */
   addCourseCurriculum() {
-    this.modalService.open(CourseCurriculumComponent);
+    this.modalService.open(CourseCurriculumComponent, {
+      size:"lg"      
+      });
   }
 }

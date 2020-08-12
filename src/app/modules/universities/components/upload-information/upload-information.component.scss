@@ -143,6 +143,7 @@
 
             }
             ul {
+              padding-top: 25px;
                 li {
                     padding: 10px;
                     font-size: 17px;
@@ -157,9 +158,10 @@
               box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05),
                 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 2px 20px 0 rgba(0, 0, 0, 0.2);
               border-radius: 0;
-              width: 950px;
+              width: 930px;
               margin-bottom: 20px;
               padding: 25px 20px;
+              margin: 0px 10px 10px 10px;
             }
 
             .upload-heading {
@@ -293,6 +295,9 @@
                     color: #fff;
                     padding: 10px 15px;
                     border-radius: 50%;
+                    .modal-dialog {
+                      max-width: 650px !important;
+                    }
                 }
                 p {
                     margin: 10px 0px;
@@ -334,6 +339,10 @@
 
 }
 
+.active {
+  border-right: 3px solid #000;
+  background-color: #fb850a;
+}
 // .actions span  i {
 //     font-size: 13px;
 //     color: #fb850a;

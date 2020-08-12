@@ -1,3 +1,27 @@
-<p>
-  add-brochure works!
-</p>
+<section>
+  <div>
+    <div class="scholar-head">
+      <div>
+        <h3>Add Brochure Details</h3>
+      </div>
+      <div>
+        <span><i class="fa fa-times" aria-hidden="true"></i></span>
+      </div>
+    </div>
+    <div class="form-data">
+      <div class="browse-btn">
+        <button type="button" class="btn" (click)="fileInput.click()">
+          <span>Upload Brochures</span>
+          <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" />
+        </button>
+        <p>Supported Formats: JPG, PNG, JPEG</p>
+      </div>
+
+      <div class="col-md-12">
+        <div class="submit-btn">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
