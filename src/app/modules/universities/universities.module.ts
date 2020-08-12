@@ -2,13 +2,18 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 import { UniversitiesRoutingModule } from "./universities-routing.module";
-import { UniversityDashboardComponent } from "./pages/university-dashboard/university-dashboard.component";
-import { UploadInformationComponent } from "./pages/upload-information/upload-information.component";
-import { CandidateSearchComponent } from "./pages/candidate-search/candidate-search.component";
-import { ManageStudentsComponent } from "./pages/manage-students/manage-students.component";
-import { DocumentsComponent } from "./pages/documents/documents.component";
 import { UniversityHomeComponent } from "./pages/university-home/university-home.component";
-
+import { UniversityDashboardComponent } from "./components/university-dashboard/university-dashboard.component";
+import { UploadInformationComponent } from "./components/upload-information/upload-information.component";
+import { CandidateSearchComponent } from "./components/candidate-search/candidate-search.component";
+import { ManageStudentsComponent } from "./components/manage-students/manage-students.component";
+import { DocumentsComponent } from "./components/documents/documents.component";
+import { SharedModule } from "src/app/shared/shared.module";
+import { AddScholarshipComponent } from "./components/add-scholarship/add-scholarship.component";
+import { AddBrochureComponent } from "./components/add-brochure/add-brochure.component";
+import { AddEventComponent } from "./components/add-event/add-event.component";
+import { AddInternalCounselorTrainingComponent } from "./components/add-internal-counselor-training/add-internal-counselor-training.component";
+import { CourseCurriculumComponent } from "./components/course-curriculum/course-curriculum.component";
 @NgModule({
   declarations: [
     UniversityDashboardComponent,
@@ -17,7 +22,19 @@ import { UniversityHomeComponent } from "./pages/university-home/university-home
     ManageStudentsComponent,
     DocumentsComponent,
     UniversityHomeComponent,
+    AddScholarshipComponent,
+    AddBrochureComponent,
+    AddEventComponent,
+    AddInternalCounselorTrainingComponent,
+    CourseCurriculumComponent,
   ],
-  imports: [CommonModule, UniversitiesRoutingModule],
+  imports: [CommonModule, UniversitiesRoutingModule, SharedModule],
+  entryComponents: [
+    AddScholarshipComponent,
+    AddBrochureComponent,
+    AddEventComponent,
+    AddInternalCounselorTrainingComponent,
+    CourseCurriculumComponent,
+  ],
 })
 export class UniversitiesModule {}

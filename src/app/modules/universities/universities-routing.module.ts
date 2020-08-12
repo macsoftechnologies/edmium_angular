@@ -1,11 +1,11 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { UniversityHomeComponent } from "./pages/university-home/university-home.component";
-import { UniversityDashboardComponent } from "./pages/university-dashboard/university-dashboard.component";
-import { DocumentsComponent } from "./pages/documents/documents.component";
-import { UploadInformationComponent } from "./pages/upload-information/upload-information.component";
-import { CandidateSearchComponent } from "./pages/candidate-search/candidate-search.component";
-import { ManageStudentsComponent } from "./pages/manage-students/manage-students.component";
+import { UniversityDashboardComponent } from "./components/university-dashboard/university-dashboard.component";
+import { UploadInformationComponent } from "./components/upload-information/upload-information.component";
+import { CandidateSearchComponent } from "./components/candidate-search/candidate-search.component";
+import { ManageStudentsComponent } from "./components/manage-students/manage-students.component";
+import { DocumentsComponent } from "./components/documents/documents.component";
 
 const routes: Routes = [
   {

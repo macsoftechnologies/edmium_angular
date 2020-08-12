@@ -6,11 +6,15 @@
         <div class="card-body">
           <div class="row">
             <div class="col">
-              <p class="card-title text-uppercase text-muted mb-0">Eligible Candidates</p>
-              <span class="dashboard-values font-weight-bold mb-0">350,897</span>
+              <p class="card-title text-uppercase text-muted mb-0">
+                Eligible Candidates
+              </p>
+              <span class="dashboard-values font-weight-bold mb-0">350</span>
             </div>
             <div class="col-auto">
-              <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+              <div
+                class="icon icon-shape bg-danger text-white rounded-circle shadow"
+              >
                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
               </div>
             </div>
@@ -27,11 +31,15 @@
         <div class="card-body">
           <div class="row">
             <div class="col">
-              <h6 class="card-title text-uppercase text-muted mb-0">Applications</h6>
-              <span class="dashboard-values font-weight-bold mb-0">2,356</span>
+              <h6 class="card-title text-uppercase text-muted mb-0">
+                Applications
+              </h6>
+              <span class="dashboard-values font-weight-bold mb-0">230</span>
             </div>
             <div class="col-auto">
-              <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+              <div
+                class="icon icon-shape bg-warning text-white rounded-circle shadow"
+              >
                 <i class="fa fa-pie-chart"></i>
               </div>
             </div>
@@ -48,11 +56,15 @@
         <div class="card-body">
           <div class="row">
             <div class="col">
-              <h6 class="card-title text-uppercase text-muted mb-0">  Offer letters</h6>
-              <span class="dashboard-values font-weight-bold mb-0">924</span>
+              <h6 class="card-title text-uppercase text-muted mb-0">
+                Offer letters
+              </h6>
+              <span class="dashboard-values font-weight-bold mb-0">120</span>
             </div>
             <div class="col-auto">
-              <div class="icon icon-shape bg-primary text-white rounded-circle shadow">
+              <div
+                class="icon icon-shape bg-primary text-white rounded-circle shadow"
+              >
                 <i class="fa fa-area-chart"></i>
               </div>
             </div>
@@ -69,17 +81,21 @@
         </div>
       </div>
     </div>
-    
+
     <div class="col-xl-3 col-lg-6">
       <div class="card card-stats mb-4 mb-xl-0">
         <div class="card-body">
           <div class="row">
             <div class="col">
-              <h6 class="card-title text-uppercase text-muted mb-0">payments</h6>
-              <span class="dashboard-values font-weight-bold mb-0">49,65%</span>
+              <h6 class="card-title text-uppercase text-muted mb-0">
+                payments
+              </h6>
+              <span class="dashboard-values font-weight-bold mb-0">75%</span>
             </div>
             <div class="col-auto">
-              <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+              <div
+                class="icon icon-shape bg-info text-white rounded-circle shadow"
+              >
                 <i class="fa fa-telegram" aria-hidden="true"></i>
               </div>
             </div>
@@ -90,6 +106,42 @@
           </p> -->
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Graph -->
+  <div>
+    <!-- Date Filter section -->
+    <div class="date-filter-wrapper">
+      <span>Select Date Range</span>
+      <div class="d-flex date-range-filter">
+        <div class="graph-date-input">
+          <span>Start Date: </span>
+          <input type="date" placeholder="start date" />
+        </div>
+        <div class="graph-date-input">
+          <span>End Date: </span>
+          <input type="date" placeholder="end date" />
+        </div>
+        <div class="graph-date-input">
+          <button class="btn get-results-btn">Get Results</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graph section -->
+    <div>
+      <canvas
+        baseChart
+        [datasets]="barChartData"
+        [labels]="mbarChartLabels"
+        [options]="barChartOptions"
+        [colors]="barChartColors"
+        [legend]="barChartLegend"
+        [chartType]="barChartType"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"
+      ></canvas>
     </div>
   </div>
 </div>
