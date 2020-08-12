@@ -14,6 +14,7 @@ import { AddBrochureComponent } from "./components/add-brochure/add-brochure.com
 import { AddEventComponent } from "./components/add-event/add-event.component";
 import { AddInternalCounselorTrainingComponent } from "./components/add-internal-counselor-training/add-internal-counselor-training.component";
 import { CourseCurriculumComponent } from "./components/course-curriculum/course-curriculum.component";
+import { CandidateProfileComponent } from "./components/candidate-profile/candidate-profile.component";
 @NgModule({
   declarations: [
     UniversityDashboardComponent,
@@ -27,6 +28,7 @@ import { CourseCurriculumComponent } from "./components/course-curriculum/course
     AddEventComponent,
     AddInternalCounselorTrainingComponent,
     CourseCurriculumComponent,
+    CandidateProfileComponent,
   ],
   imports: [CommonModule, UniversitiesRoutingModule, SharedModule],
   entryComponents: [
@@ -35,6 +37,7 @@ import { CourseCurriculumComponent } from "./components/course-curriculum/course
     AddEventComponent,
     AddInternalCounselorTrainingComponent,
     CourseCurriculumComponent,
+    CandidateProfileComponent,
   ],
 })
 export class UniversitiesModule {}

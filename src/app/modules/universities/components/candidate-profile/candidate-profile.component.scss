@@ -1,0 +1,44 @@
+.profile-page {
+  padding: 15px 0px;
+
+  .pro-head {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .pro-head1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .card {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: #dfe1e500;
+    // padding: 12px;
+    margin: 15px 0px;
+
+    .det {
+      margin: 15px 0px;
+    }
+
+    h3 {
+      padding: 15px 20px;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .profile-details {
+      padding: 15px 30px;
+      background: #e4eef6;
+
+      label {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      p {
+        // font-weight: bold;
+      }
+    }
+  }
+}
