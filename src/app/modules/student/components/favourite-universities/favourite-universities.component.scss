@@ -3,10 +3,13 @@
         border: 1px solid #ccc;
         background-color: #fff;
         border-radius: 10px;
+        position: relative;
         .favourite-icons {
             display: flex;
             justify-content: flex-end;
-            margin: 10px 0;
+            margin-top: 10px;
+            position: absolute;
+            right: 0;
             .exchange-icon {
                 padding: 3px 7px;
                 border: 1px solid #9c9191;
@@ -32,8 +35,11 @@
                 width: 150px;
             }
         }
+        .university-fee-details {
+            padding: 25px 15px;
+        }
         .course-name-details {
-            padding: 15px;
+            padding-bottom: 15px;
             h4 {
                 font-size: 16px;
                 font-weight: 600;
@@ -54,7 +60,7 @@
             }
         }
         .fee-structure {
-            padding: 0 15px;
+            // padding: 0 15px;
             .price-per-year {
                 h4 {
                     font-size: 16px;
@@ -66,6 +72,7 @@
                 p {
                     font-size: 14px;
                     color: #ccc;
+                    margin-bottom: 0;
                 }
             }
         }
