@@ -1,6 +1,10 @@
 .searchPanel {
   //   background: url("assets/images/search_counselor.jpg");
-  //   background-image: url("assets/images/search_counselor.jpg");
+    // background-image: url("assets/images/search_counselor.jpg");
+    background-image: url("/assets/images/search_counselor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 #course {
@@ -196,6 +200,7 @@ h3 {
   border-bottom: 1px solid #000;
   color: #000;
   font-weight: 500;
+  border-radius: 0;
 }
 
 label {
