@@ -22,15 +22,15 @@
             <div class="profile-update-cards">
               <div class="profile-update-cards-wrapper">
                 <div class="side-quick-links">
-                  <p class="quick-links">Quick Links</p>
+                  <!-- <p class="quick-links">Quick Links</p> -->
                   <ul>
-                    <li (click)="scrollToEle(attach_resume)">Scholarships</li>
-                    <li (click)="scrollToEle(resume_headline)">Brochures</li>
-                    <li (click)="scrollToEle(key_skills)">Events</li>
-                    <li (click)="scrollToEle(student_education)">
+                    <li (click)="scrollToEle(attach_resume)" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Scholarships</li>
+                    <li (click)="scrollToEle(resume_headline)" [routerLinkActive]="['active']">Brochures</li>
+                    <li (click)="scrollToEle(key_skills)" [routerLinkActive]="['active']">Events</li>
+                    <li (click)="scrollToEle(student_education)" [routerLinkActive]="['active']">
                       Internal Counsellor Training
                     </li>
-                    <li (click)="scrollToEle(student_projects)">
+                    <li (click)="scrollToEle(student_projects)" [routerLinkActive]="['active']">
                       Course Circulam
                     </li>
                   </ul>
