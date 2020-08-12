@@ -14,7 +14,6 @@ import { SharedModule } from "./shared/shared.module";
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent,
     RegisterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule],

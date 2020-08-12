@@ -1,105 +1,105 @@
-.login-page{
-    background-color: #f8f7f5;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    .tan{
-        height: 115px;
-        width: 115px;
-    }
-.login-body {
-    box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.45), 0 3px 15px 0 rgba(0, 0, 0, 0.35);
-    transition: .25s box-shadow;
+.login-page {
+  background-color: #f8f7f5;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  .tan {
+    height: 115px;
+    width: 115px;
+  }
+  .login-body {
+    box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.45),
+      0 3px 15px 0 rgba(0, 0, 0, 0.35);
+    transition: 0.25s box-shadow;
     background-color: white;
     max-width: 513px;
     margin: auto;
     background: #f8f7f5;
     .login-wrapper {
-        padding: 10px 15px;
-        background: #fff;
-        border-radius: 4px;
-        // height: 500px;
-        width: 100%;
-        /*margin: 0px 35px;*/
-        h2{
-            font-weight: bold;
-            font-size: 30px;
-            text-transform: uppercase;
-            font-family: 'Julius Sans One';
-            margin-bottom: 15px;
-            line-height: 42px;
-            letter-spacing: -1px;
-            color: #6693A6;
-            border-bottom: 1px solid #D8D7D8;
-            padding: 0 0 6px;
-            margin: 18px 0px 17px;
+      padding: 10px 15px;
+      background: #fff;
+      border-radius: 4px;
+      // height: 500px;
+      width: 100%;
+      /*margin: 0px 35px;*/
+      h2 {
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: "Julius Sans One";
+        margin-bottom: 15px;
+        line-height: 42px;
+        letter-spacing: -1px;
+        color: #6693a6;
+        border-bottom: 1px solid #d8d7d8;
+        padding: 0 0 6px;
+        margin: 18px 0px 17px;
+      }
+      p {
+        font-family: "Rokkitt";
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 10px;
+      }
+      .email-section {
+        h3 {
+          font-weight: bold;
+          font-size: 15px;
+          text-transform: uppercase;
+          font-family: "Julius Sans One";
+          margin-bottom: 15px;
+          line-height: 42px;
+          letter-spacing: -1px;
+          color: #6693a6;
+          border-bottom: 1px solid #d8d7d8;
         }
-        p{
-            font-family: 'Rokkitt';
-            font-size: 15px;
-            line-height: 20px;
-            margin-top: 10px;
-        }
-        .email-section{ 
-            h3{
-            font-weight: bold;
-            font-size: 15px;
-            text-transform: uppercase;
-            font-family: 'Julius Sans One';
-            margin-bottom: 15px;
-            line-height: 42px;
-            letter-spacing: -1px;
-            color: #6693A6;
-            border-bottom: 1px solid #D8D7D8;
-        }
-        input{
-            font-family: 'Rokkitt';
-            box-shadow: 0 0 0 1px rgba(0,0,0,.2), 0 2px 4px rgba(0,0,0,.2);
-            width: 100% !important;
-            height: 35px;
-            font-size: 15px;
+        input {
+          font-family: "Rokkitt";
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+          width: 100% !important;
+          height: 35px;
+          font-size: 15px;
         }
         .appeared-section {
-            padding: 0px;
-            p{
-                color: #6693A6;
-            }
+          padding: 0px;
+          p {
+            color: #6693a6;
+          }
         }
-        .login-value{
-            a{
-                font-family: 'Rokkitt';
-                font-size: 16px;
+        .login-value {
+          a {
+            font-family: "Rokkitt";
+            font-size: 16px;
+          }
+          button {
+            font-family: "Rokkitt";
+            font-size: 20px;
+            padding: 4px 25px;
+            background: #fb850a;
+            color: #fff;
+            margin: 10px 20px;
+            border-radius: 3px;
+            border: 0;
+          }
+          .forgot-link {
+            align-items: center;
+            display: flex;
+            text-align: end;
+            justify-content: flex-end;
+            // margin-top: 16px;
+            .forgot-btn {
+              color: #000;
             }
-            button{
-                font-family: 'Rokkitt';
-                font-size: 20px;
-                padding: 4px 25px;
-                background: #fb850a;
-                color: #fff;
-                margin: 10px 20px;
-                border-radius: 3px;
-                border: 0;
+            .forgot-btn1 {
+              float: right;
+              color: #555;
+              font-size: 12px;
+              color: #fb850a;
             }
-            .forgot-link{
-                align-items: center;
-                display: flex;
-                text-align: end;
-                justify-content: flex-end;
-                // margin-top: 16px;
-                .forgot-btn{
-                    color: #000;
-                }
-                .forgot-btn1{
-                    float: right;
-                    color: #555;
-                    font-size: 12px;
-                    color: #fb850a;
-                    
-                }
-            }
+          }
         }
+      }
     }
-    }
-}
+  }
 }
 
 // .login-logo {
@@ -112,5 +112,3 @@
 //     height: 100px;
 //     width: 130px;
 // }
-
-
