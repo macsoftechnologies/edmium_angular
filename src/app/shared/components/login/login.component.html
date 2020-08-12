@@ -1,23 +1,18 @@
 <div class="login-page">
-  <section
-    class="signuppage-section home-user-login d-none"
-    style="text-align: center;"
-  >
+  <section class="signuppage-section home-user-login d-none" style="text-align: center;">
     <div class="col-md-12">
       <a href="https://stagging.edmium.com/home">
-        <img
-          src="../../../../assets/images/logo_transparent_background.png"
-          sizes=""
-          alt=""
-          class="image tan"
-        />
+        <img src="../../../../assets/images/logo_transparent_background.png" sizes="" alt="" class="image tan" />
       </a>
     </div>
   </section>
   <div class="login-body card">
     <section>
       <div class="login-wrapper">
-        <h2>Hey, Welcome back!</h2>
+        <div class="modal-head-close">
+          <div class="close-modal"><i class="fa fa-times"></i></div>
+          <h2>Welcome back!</h2>
+        </div>
         <p>
           It's nice to see you again. Please use the options below to log in.
           Or, <a href="#" class="create-acc">create an account</a> if you don't
@@ -25,44 +20,27 @@
         </p>
         <div class="email-section">
           <h3>Use your email address to log in</h3>
-          <form
-            id="atbdp-contact-form"
-            class="form-vertical form-inline form-data"
-            action="https://stagging.edmium.com/userlogin/login"
-            role="form"
-            method="post"
-          >
+          <form id="atbdp-contact-form" class="form-vertical form-inline form-data"
+            action="https://stagging.edmium.com/userlogin/login" role="form" method="post">
             <div class="container-fluid">
               <div class="col-md-12 appeared-section">
                 <div class="row">
-                  <div class="col-md-6">
-                    <p style="font-weight: bold;">EMAIL ADDRESS</p>
+                  <div class="col-md-12">
+                    <p style="font-weight: bold;">Email Address</p>
                     <input type="text" name="email" class="form-control" />
                   </div>
 
-                  <div class="col-md-6">
-                    <p style="font-weight: bold;">PASSWORD</p>
-                    <input
-                      type="password"
-                      name="password"
-                      class="form-control"
-                    />
+                  <div class="col-md-12">
+                    <p style="font-weight: bold;">Password</p>
+                    <input type="password" name="password" class="form-control" />
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="container-fluid">
-              <div class="col-md-12 login-value">
-                <div class="row mt-5">
-                  <div class="col-md-6 col-sm-5 col-xs-12">
-                    <div class="login-page-login-button">
-                      <button type="submit" class="login-page-btn">
-                        Log In
-                      </button>
-                    </div>
-                  </div>
-
+              <div class="login-value">
+                <div class="row mt-2">
                   <div class="col-md-6 col-sm-7 col-xs-12 forgot-link">
                     <div class="">
                       <a href="#" class="forgot-btn">Forgotten Password?</a>
@@ -70,6 +48,13 @@
                     /
                     <div class="">
                       <a routerLink="/register" class="forgot-btn1">Sign Up</a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-5 col-xs-12">
+                    <div class="login-page-login-button">
+                      <button type="submit" class="login-page-btn">
+                        LOGIN
+                      </button>
                     </div>
                   </div>
                 </div>
