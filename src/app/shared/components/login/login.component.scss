@@ -24,19 +24,19 @@
       h2 {
         font-weight: bold;
         font-size: 30px;
-        text-transform: uppercase;
-        font-family: "Julius Sans One";
+        // text-transform: uppercase;
+        // font-family: "Julius Sans One";
         margin-bottom: 15px;
         line-height: 42px;
         letter-spacing: -1px;
         color: #6693a6;
         border-bottom: 1px solid #d8d7d8;
         padding: 0 0 6px;
-        margin: 18px 0px 17px;
+        // margin: 18px 0px 17px;
       }
       p {
-        font-family: "Rokkitt";
-        font-size: 15px;
+        // font-family: "Rokkitt";
+        font-size: 13px;
         line-height: 20px;
         margin-top: 10px;
       }
@@ -44,8 +44,8 @@
         h3 {
           font-weight: bold;
           font-size: 15px;
-          text-transform: uppercase;
-          font-family: "Julius Sans One";
+          // text-transform: uppercase;
+          // font-family: "Julius Sans One";
           margin-bottom: 15px;
           line-height: 42px;
           letter-spacing: -1px;
@@ -53,11 +53,12 @@
           border-bottom: 1px solid #d8d7d8;
         }
         input {
-          font-family: "Rokkitt";
-          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+          // font-family: "Rokkitt";
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
           width: 100% !important;
           height: 35px;
           font-size: 15px;
+          border-radius: 30px;
         }
         .appeared-section {
           padding: 0px;
@@ -67,24 +68,24 @@
         }
         .login-value {
           a {
-            font-family: "Rokkitt";
-            font-size: 16px;
+            // font-family: "Rokkitt";
+            font-size: 12px;
           }
           button {
-            font-family: "Rokkitt";
-            font-size: 20px;
+            // font-family: "Rokkitt";
+            font-size: 17px;
             padding: 4px 25px;
             background: #fb850a;
             color: #fff;
-            margin: 10px 20px;
+            margin: 10px 0px;
             border-radius: 3px;
             border: 0;
           }
           .forgot-link {
             align-items: center;
             display: flex;
-            text-align: end;
-            justify-content: flex-end;
+            // text-align: end;
+            justify-content: flex-start;
             // margin-top: 16px;
             .forgot-btn {
               color: #000;
@@ -99,6 +100,17 @@
         }
       }
     }
+  }
+}
+
+.login-page-login-button {
+  text-align: right;
+}
+.modal-head-close {
+  line-height: 1;
+  .close-modal {
+    text-align: right;
+    font-size: 20px;
   }
 }
 
