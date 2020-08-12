@@ -1,7 +1,7 @@
 <div class="student-dashboard">
   <div class="container-fluid student-dashboard-container">
     <div class="row student-dashboard-row">
-      <div class="col-md-2 student-dashboard-profile">
+      <!-- <div class="col-md-2 student-dashboard-profile">
         <div class="student-profile">
           <div class="student-overall-details">
             <div class="student-info">
@@ -23,15 +23,15 @@
                 <li>Verified :</li>
               </ul>
             </div>
-            <div class="side-bar-btns d-none">
-              <div class="follow-btn">
-                <span>Follow</span>
-                <i class="fa fa-angle-down"></i>
+            <div class="side-bar-btns">
+              <div class="follow-btn" (click)="onNavigateToProfile()">
+                <span>Edit Profile</span>
+                <i class="fa fa-edit"></i>
               </div>
-              <div class="mail-btn">
+              <div class="mail-btn d-none">
                 <i class="fa fa-envelope-o"></i>
               </div>
-              <div class="bit-btn">
+              <div class="bit-btn d-none">
                 <i class="fa fa-btc"></i>
               </div>
             </div>
@@ -57,55 +57,27 @@
                     <span class="activities-icon-bg"
                       ><i class="fa fa-file-text-o"></i
                     ></span>
-                    <span>News Feed</span><span class="indicator"></span>
+                    <a href="javascript:void(0)" routerLink="/student/dashboard"
+                      ><span>Dashboard</span><span class="indicator"></span
+                    ></a>
                   </li>
                   <li>
                     <span class="activities-icon-bg"
-                      ><i class="fa fa-users"></i
-                    ></span>
-                    <span>Group</span>
+                      ><i class="fa fa-users"></i></span
+                    ><a
+                      href="javascript:void(0)"
+                      routerLink="/student/universities"
+                      ><span>Universities</span></a
+                    >
                   </li>
                   <li>
                     <span class="activities-icon-bg"
-                      ><i class="fa fa-graduation-cap"></i
-                    ></span>
-                    <span>Courses</span>
-                  </li>
-                  <li>
-                    <span class="activities-icon-bg"
-                      ><i class="fa fa-calendar"></i
-                    ></span>
-                    <span>Event</span><span class="indicator"></span>
-                  </li>
-                  <li>
-                    <span class="activities-icon-bg"
-                      ><i class="fa fa-briefcase"></i
-                    ></span>
-                    <span>Jobs</span>
-                  </li>
-                  <li>
-                    <span class="activities-icon-bg"
-                      ><i class="fa fa-bars"></i
-                    ></span>
-                    <span>Gigs</span>
-                  </li>
-                  <li>
-                    <span class="activities-icon-bg"
-                      ><i class="fa fa-cart-plus"></i
-                    ></span>
-                    <span>Marketplace</span><span class="indicator"></span>
-                  </li>
-                  <li>
-                    <span class="activities-icon-bg"
-                      ><i class="fa fa-weixin"></i
-                    ></span>
-                    <span>Blogs</span>
-                  </li>
-                  <li>
-                    <span class="activities-icon-bg"
-                      ><i class="fa fa-comments-o"></i
-                    ></span>
-                    <span>Forums</span>
+                      ><i class="fa fa-graduation-cap"></i></span
+                    ><a
+                      href="javascript:void(0)"
+                      routerLink="/student/scholarhips"
+                      ><span>Scholarships</span></a
+                    >
                   </li>
                 </ul>
               </div>
@@ -120,8 +92,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-10 student-dashboard-about">
+      </div> -->
+      <div class="col-md-12 student-dashboard-about">
         <div class="profile-progress-bar">
           <div class="profile-text">
             <p>Profile Completeness(Good)</p>
@@ -137,7 +109,7 @@
             ></div>
           </div>
         </div>
-        <div class="about-me-card">
+        <div class="about-me-card d-none">
           <p class="about-me-text">about me</p>
           <p class="cam-icon"><i class="fa fa-camera"></i></p>
         </div>
@@ -168,6 +140,7 @@
           </ul>
         </div>
         <div class="see-all">
+          <label>University list</label>
           <p>See all</p>
         </div>
         <!-- <carousel>

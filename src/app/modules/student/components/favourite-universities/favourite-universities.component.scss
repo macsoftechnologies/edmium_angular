@@ -1,80 +1,80 @@
 .favourite-universities {
-    .university-card {
-        border: 1px solid #ccc;
-        background-color: #fff;
-        border-radius: 10px;
-        position: relative;
-        .favourite-icons {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 10px;
-            position: absolute;
-            right: 0;
-            .exchange-icon {
-                padding: 3px 7px;
-                border: 1px solid #9c9191;
-                border-radius: 50%;
-                color: #9c9191;
-                margin-right: 5px;
-            }
-            .fav-icon {
-                padding: 3px 5px;
-                border: 1px solid #9c9191;
-                border-radius: 50%;
-                color: #635a5a;
-                margin-right: 5px;
-            }
-        }
-        .university-name {
-            height: 100%;
-            width: 100%;
-            border-bottom: 1px solid #ccc;
-            text-align: center;
-            img {
-                height: 100%;
-                width: 150px;
-            }
-        }
-        .university-fee-details {
-            padding: 25px 15px;
-        }
-        .course-name-details {
-            padding-bottom: 15px;
-            h4 {
-                font-size: 16px;
-                font-weight: 600;
-                margin-bottom: 0;
-            }
-            .detailed-duration {
-                display: flex;
-                margin-bottom: 0;
-                li {
-                    list-style-type: disc;
-                    color: #ccc;
-                    font-size: 13px;
-                    padding-right: 25px;
-                    &:nth-child(1) {
-                        list-style-type: none;
-                    }
-                }
-            }
-        }
-        .fee-structure {
-            // padding: 0 15px;
-            .price-per-year {
-                h4 {
-                    font-size: 16px;
-                    font-weight: 600;
-                    margin-bottom: 0;
-                }
-            }
-            .university-country {
-                p {
-                    font-size: 14px;
-                    color: #ccc;
-                    margin-bottom: 0;
-                }
-            }
-        }
+  .university-card {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    .favourite-icons {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+      position: absolute;
+      right: 0;
+      .exchange-icon {
+        padding: 3px 7px;
+        border: 1px solid #9c9191;
+        border-radius: 50%;
+        color: #9c9191;
+        margin-right: 5px;
+      }
+      .fav-icon {
+        padding: 3px 5px;
+        border: 1px solid #9c9191;
+        border-radius: 50%;
+        color: #635a5a;
+        margin-right: 5px;
+      }
     }
+    .university-name {
+      height: 100%;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+      img {
+        height: 100%;
+        width: 150px;
+      }
+    }
+    .university-fee-details {
+      padding: 5px 15px;
+    }
+    .course-name-details {
+      padding-bottom: 15px;
+      h4 {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      .detailed-duration {
+        display: flex;
+        margin-bottom: 0;
+        li {
+          list-style-type: disc;
+          color: #ccc;
+          font-size: 12px;
+          padding-right: 25px;
+          &:nth-child(1) {
+            list-style-type: none;
+          }
+        }
+      }
+    }
+    .fee-structure {
+      // padding: 0 15px;
+      .price-per-year {
+        h4 {
+          font-size: 13px;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+      }
+      .university-country {
+        p {
+          font-size: 12px;
+          color: #ccc;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,101 @@
+<div class="student-dashboard">
+  <div class="container-fluid student-dashboard-container">
+    <div class="row student-dashboard-row">
+      <div class="col-md-2 student-dashboard-profile">
+        <div class="student-profile">
+          <div class="student-overall-details">
+            <div class="student-info">
+              <div class="student-image">
+                <img src="assets/images/pro.jfif" alt="" />
+              </div>
+              <div class="student-name">
+                <h4>Ganesh</h4>
+                <small>Student</small>
+              </div>
+            </div>
+            <div class="student-detailed-info d-none">
+              <ul>
+                <li>Qualification :</li>
+                <li>Area of interest :</li>
+                <li>Preferred Country :</li>
+                <li>Preferred Intake :</li>
+                <li>Dream University :</li>
+                <li>Verified :</li>
+              </ul>
+            </div>
+            <div class="side-bar-btns">
+              <div class="follow-btn" (click)="onNavigateToProfile()">
+                <span>Edit Profile</span>
+                <i class="fa fa-edit"></i>
+              </div>
+              <div class="mail-btn d-none">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="bit-btn d-none">
+                <i class="fa fa-btc"></i>
+              </div>
+            </div>
+            <div class="about-me">
+              <div class="about-me-header">
+                <p><span>About me</span> <i class="fa fa-edit"></i></p>
+              </div>
+              <div class="about-body">
+                <p>
+                  Hi, I'm Ganesh. I know my name is a bit long, but the reason I
+                  put the full name here is that it will take a long space to
+                  fit this text perfectly here.
+                </p>
+              </div>
+            </div>
+            <div class="actvities">
+              <div class="actvities-header">
+                <p><span>Activities</span></p>
+              </div>
+              <div class="activities-list">
+                <ul>
+                  <li>
+                    <span class="activities-icon-bg"
+                      ><i class="fa fa-file-text-o"></i
+                    ></span>
+                    <a href="javascript:void(0)" routerLink="/student/dashboard"
+                      ><span>Dashboard</span><span class="indicator"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <span class="activities-icon-bg"
+                      ><i class="fa fa-users"></i></span
+                    ><a
+                      href="javascript:void(0)"
+                      routerLink="/student/universities"
+                      ><span>Universities</span></a
+                    >
+                  </li>
+                  <li>
+                    <span class="activities-icon-bg"
+                      ><i class="fa fa-graduation-cap"></i></span
+                    ><a
+                      href="javascript:void(0)"
+                      routerLink="/student/scholarhips"
+                      ><span>Scholarships</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="profile-btns d-none">
+              <div class="views">
+                <button>Views</button>
+              </div>
+              <div class="edit-profile">
+                <button (click)="onNavigateToProfile()">Edit Profile</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10 student-dashboard-about">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,12 +4,19 @@ import { StudentDashboardComponent } from "./pages/student-dashboard/student-das
 import { StudentUniversitiesListComponent } from "./pages/student-universities-list/student-universities-list.component";
 import { StudentProfileComponent } from "./pages/student-profile/student-profile.component";
 import { ScholarshipsComponent } from "./pages/scholarships/scholarships.component";
+import { HomeComponent } from "./pages/home/home.component";
 
 const routes: Routes = [
-  { path: "dashboard", component: StudentDashboardComponent },
-  { path: "universities", component: StudentUniversitiesListComponent },
-  { path: "profile", component: StudentProfileComponent },
-  { path: "scholarhips", component: ScholarshipsComponent },
+  {
+    path: "",
+    component: HomeComponent,
+    children: [
+      { path: "dashboard", component: StudentDashboardComponent },
+      { path: "universities", component: StudentUniversitiesListComponent },
+      { path: "profile", component: StudentProfileComponent },
+      { path: "scholarhips", component: ScholarshipsComponent },
+    ],
+  },
 ];
 
 @NgModule({
