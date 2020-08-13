@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
-  selector: 'app-course-curriculum',
-  templateUrl: './course-curriculum.component.html',
-  styleUrls: ['./course-curriculum.component.scss']
+  selector: "app-course-curriculum",
+  templateUrl: "./course-curriculum.component.html",
+  styleUrls: ["./course-curriculum.component.scss"],
 })
 export class CourseCurriculumComponent implements OnInit {
+  constructor(private activeModel: NgbActiveModal) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  onClose() {
+    this.activeModel.dismiss();
   }
-
 }

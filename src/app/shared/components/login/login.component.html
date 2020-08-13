@@ -1,8 +1,16 @@
 <div class="login-page">
-  <section class="signuppage-section home-user-login d-none" style="text-align: center;">
+  <section
+    class="signuppage-section home-user-login d-none"
+    style="text-align: center;"
+  >
     <div class="col-md-12">
       <a href="https://stagging.edmium.com/home">
-        <img src="../../../../assets/images/logo_transparent_background.png" sizes="" alt="" class="image tan" />
+        <img
+          src="../../../../assets/images/logo_transparent_background.png"
+          sizes=""
+          alt=""
+          class="image tan"
+        />
       </a>
     </div>
   </section>
@@ -10,7 +18,11 @@
     <section>
       <div class="login-wrapper">
         <div class="modal-head-close">
-          <div class="close-modal"><i class="fa fa-times"></i></div>
+          <div class="close-modal">
+            <a href="javascript:void(0)" (click)="onCloseLogin()"
+              ><i class="fa fa-times"></i
+            ></a>
+          </div>
           <h2>Welcome back!</h2>
         </div>
         <p>
@@ -20,8 +32,13 @@
         </p>
         <div class="email-section">
           <h3>Use your email address to log in</h3>
-          <form id="atbdp-contact-form" class="form-vertical form-inline form-data"
-            action="https://stagging.edmium.com/userlogin/login" role="form" method="post">
+          <form
+            id="atbdp-contact-form"
+            class="form-vertical form-inline form-data"
+            action="https://stagging.edmium.com/userlogin/login"
+            role="form"
+            method="post"
+          >
             <div class="container-fluid">
               <div class="col-md-12 appeared-section">
                 <div class="row">
@@ -32,7 +49,11 @@
 
                   <div class="col-md-12">
                     <p style="font-weight: bold;">Password</p>
-                    <input type="password" name="password" class="form-control" />
+                    <input
+                      type="password"
+                      name="password"
+                      class="form-control"
+                    />
                   </div>
                 </div>
               </div>
@@ -43,7 +64,9 @@
                 <div class="row mt-2">
                   <div class="col-md-6 col-sm-7 col-xs-12 forgot-link">
                     <div class="">
-                      <a href="#" class="forgot-btn">Forgotten Password?</a>
+                      <a href="javascript:void(0)" class="forgot-btn"
+                        >Forgotten Password?</a
+                      >
                     </div>
                     /
                     <div class="">
@@ -52,7 +75,11 @@
                   </div>
                   <div class="col-md-6 col-sm-5 col-xs-12">
                     <div class="login-page-login-button">
-                      <button type="submit" class="login-page-btn">
+                      <button
+                        type="submit"
+                        class="login-page-btn"
+                        (click)="login()"
+                      >
                         LOGIN
                       </button>
                     </div>

@@ -5,7 +5,9 @@
         <h3>Add Scholarship Details</h3>
       </div>
       <div>
-        <span><i class="fa fa-times" aria-hidden="true"></i></span>
+        <a href="javascript:void(0)" (click)="onClose()">
+          <span><i class="fa fa-times" aria-hidden="true"></i></span
+        ></a>
       </div>
     </div>
 
@@ -16,7 +18,11 @@
             <div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Scholarship Name</label>
-                <input type="email" class="form-control" placeholder="Enter Scholarship Name">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Scholarship Name"
+                />
               </div>
             </div>
           </div>
@@ -25,16 +31,24 @@
             <div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Information Link</label>
-                <input type="email" class="form-control" placeholder="Information Link">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Information Link"
+                />
               </div>
             </div>
           </div>
-          
+
           <div class="col-md-6">
             <div>
               <div class="form-group form-1">
-                <label for="exampleInputEmail1">Scholarship Details</label><br>
-                <textarea rows="5" placeholder="Enter Scholarship Details"></textarea>
+                <label for="exampleInputEmail1">Scholarship Details</label
+                ><br />
+                <textarea
+                  rows="5"
+                  placeholder="Enter Scholarship Details"
+                ></textarea>
               </div>
             </div>
           </div>

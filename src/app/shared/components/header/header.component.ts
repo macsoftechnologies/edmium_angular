@@ -14,6 +14,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {}
 
   public onOpenSignin(): void {
-    this.modalService.open(LoginComponent);
+    this.modalService.open(LoginComponent, { centered: true });
   }
 }

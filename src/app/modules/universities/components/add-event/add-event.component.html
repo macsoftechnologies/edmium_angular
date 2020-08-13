@@ -5,7 +5,9 @@
         <h3>Add Event Details</h3>
       </div>
       <div>
-        <span><i class="fa fa-times" aria-hidden="true"></i></span>
+        <a href="javascript:void(0)" (click)="onClose()">
+          <span><i class="fa fa-times" aria-hidden="true"></i></span
+        ></a>
       </div>
     </div>
 
@@ -16,7 +18,11 @@
             <div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Event Name</label>
-                <input type="email" class="form-control" placeholder="Enter Event Name">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Event Name"
+                />
               </div>
             </div>
           </div>
@@ -25,7 +31,11 @@
             <div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Event Date</label>
-                <input type="email" class="form-control" placeholder="Event Date">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Event Date"
+                />
               </div>
             </div>
           </div>

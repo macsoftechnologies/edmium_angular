@@ -5,14 +5,21 @@
         <h3>Add Counsellor Training Details</h3>
       </div>
       <div>
-        <span><i class="fa fa-times" aria-hidden="true"></i></span>
+        <a href="javascript:void(0)" (click)="onClose()">
+          <span><i class="fa fa-times" aria-hidden="true"></i></span
+        ></a>
       </div>
     </div>
     <div class="form-data">
       <div class="browse-btn">
         <button type="button" class="btn" (click)="fileInput.click()">
           <span>Upload Training Details</span>
-          <input #fileInput type="file" (change)="onFileInput($event)" style="display:none;" />
+          <input
+            #fileInput
+            type="file"
+            (change)="onFileInput($event)"
+            style="display: none;"
+          />
         </button>
         <p>Supported Formats: JPG, PNG, JPEG</p>
       </div>
